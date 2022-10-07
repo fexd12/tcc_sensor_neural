@@ -1,0 +1,12 @@
+numpy
+tensorboard
+pandas
+matplotlib
+sklearn
+h5py
+Keras
+Keras-Applications
+Keras-Preprocessing
+tensorflow-macos
+tensorflow-metal
+mne
