@@ -1,6 +1,7 @@
-import sys
 import datetime
+import sys
 from time import time
+
 from sensor_neural import SensorNeural
 
 if __name__ == "__main__":
@@ -8,6 +9,7 @@ if __name__ == "__main__":
         file_date = datetime.datetime.now().timestamp()
         sensor_leitura = SensorNeural()
         while True:
+            # TO DO - colocar o numero do enum correspondente
             pensamento = input("pensamento a processar")
             time_inicial = time()
             with open(f"/opt/nas/aguardando/{pensamento}_{file_date}.csv", "a") as f:

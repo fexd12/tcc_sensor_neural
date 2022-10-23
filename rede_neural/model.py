@@ -1,10 +1,9 @@
-import keras
-import pandas as pd
 import matplotlib.pyplot as plt
-from tensorflow import set_random_seed
-from keras.models import Sequential
-from keras.layers import Dense, Dropout, Activation, Flatten, BatchNormalization
+import pandas as pd
+import tensorflow as tf
 from numpy.random import seed
+from tensorflow import set_random_seed
+
 from rede_neural.feats import Feats
 from rede_neural.pre_processamento import PreProcessamento
 
@@ -12,57 +11,84 @@ seed(1017)
 set_random_seed(1017)
 
 pd.options.display.precision = 4
-pd.options.display.max_columns = None
 plt.rcParams["figure.figsize"] = (12, 12)
 
 
 class ModelEEG(PreProcessamento):
     def __init__(self, feats: Feats, filename: str, sfreq: int) -> None:
         PreProcessamento.__init__(self, feats, filename, sfreq)
-        self.model = Sequential()
+        self.model = tf.keras.models.Sequential()
         self.__create_model()
 
-    def __create_model(self, units=[16, 8, 4, 8, 16], dropout=.25, batch_norm=True,):
+    def __create_model(self, units=[16, 8, 4, 8, 16],
+                       dropout=.25, batch_norm=True,
+                       pool_size=2, filt_size=3):
 
         print('Creating ' + self._feats.model_type + ' Model')
         print('Input shape: ' + str(self._feats.input_shape))
 
+        nunits = len(units)
+
         # ---DenseFeedforward Network
         # Makes a hidden layer for each item in units
         if self._feats.model_type == 'NN':
-
-            self.model.add(Flatten(input_shape=self._feats.input_shape))
+            self.model.add(tf.keras.layers.Flatten(input_shape=self._feats.input_shape))
 
             for unit in units:
-                self.model.add(Dense(unit))
+                self.model.add(tf.keras.layers.Dense(unit))
                 if batch_norm:
-                    self.model.add(BatchNormalization())
-                self.model.add(Activation('relu'))
+                    self.model.add(tf.keras.layers.BatchNormalization())
+                self.model.add(tf.keras.layers.Activation('relu'))
                 if dropout:
-                    self.model.add(Dropout(dropout))
+                    self.model.add(tf.keras.layers.Dropout(dropout))
 
-            self.model.add(Dense(self._feats.num_classes, activation='softmax'))
+            self.model.add(tf.keras.layers.Dense(self._feats.num_classes, activation='softmax'))
+
+        if self._feats.model_type == 'CNN':
+            if nunits < 2:
+                print('Warning: Need at least two layers for CNN')
+            self.model.add(tf.keras.layers.Conv2D(units[0], filt_size,
+                           input_shape=self._feats.input_shape, padding='same'))
+            self.model.add(tf.keras.layers.Activation('relu'))
+            self.model.add(tf.keras.layers.MaxPooling2D(pool_size=pool_size, padding='same'))
+
+            if nunits > 2:
+                for unit in units[1:-1]:
+                    self.model.add(tf.keras.layers.Conv2D(unit, filt_size, padding='same'))
+                    self.model.add(tf.keras.layers.Activation('relu'))
+                    self.model.add(tf.keras.layers.MaxPooling2D(pool_size=pool_size, padding='same'))
+
+            self.model.add(tf.keras.layers.Flatten())
+            self.model.add(tf.keras.layers.Dense(units[-1]))
+            self.model.add(tf.keras.layers.Activation('relu'))
+            self.model.add(tf.keras.layers.Dense(self._feats.num_classes))
+            self.model.add(tf.keras.layers.Activation('softmax'))
 
         # initiate adam optimizer
-        opt = keras.optimizers.Adam(lr=0.001, beta_1=0.9, beta_2=0.999,
-                                    epsilon=None, decay=0.0, amsgrad=False)
+        opt = tf.keras.optimizers.Adam(lr=0.001, beta_1=0.9, beta_2=0.999,
+                                       decay=0.0, amsgrad=False)
         # Let's train the model using RMSprop
-        self.model.compile(loss='binary_crossentropy',
+        self.model.compile(loss='sparse_categorical_crossentropy',
                            optimizer=opt,
                            metrics=['accuracy'])
         self.model.summary()
 
-    def train_test_val(self, batch_size=2, train_epochs=20, show_plots=True):
+    def train_test_val(self, batch_size=2, train_epochs=200, show_plots=True):
 
         print('Training Model:')
         # Train Model
+
+        check_path = './ckpt/cp-{epoch:04d}.ckpt'
+
+        save_model_cb = tf.keras.callbacks.ModelCheckpoint(
+            check_path, save_weights_only=True, verbose=1, period=5)
 
         history = self.model.fit(self._feats.x_train, self._feats.y_train,
                                  batch_size=batch_size,
                                  epochs=train_epochs,
                                  validation_data=(self._feats.x_val, self._feats.y_val),
                                  shuffle=True,
-                                 verbose=True,
+                                 callbacks=[save_model_cb],
                                  class_weight=self._feats.class_weights
                                  )
 

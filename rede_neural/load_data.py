@@ -1,52 +1,36 @@
-import mne
 import pandas as pd
-from glob import glob
+import os
+import numpy as np
+
+from labels_enum import LabelsEnum
+from PIL import Image
 
 
 class DataLoader():
     def __init__(self, filename: str, sfreq: int) -> None:
         self.filename = filename
         self.sfreq = sfreq
-        self.raw: mne.io.RawArray = self.load_data()
-
-    def load_data(self) -> mne.io.RawArray:
-        return self._load(plot_sensors=False, plot_raw=False,
-                          plot_raw_psd=False)
+        self.raw = self._read_files()
 
     def _read_files(self):
-        # merging two csv files
-        # nao esta fazendo o merge dos csvs
-        df = pd.concat(
-            map(pd.read_csv, glob(self.filename), ";"))
+        label_y: list = []
+        data_x: list = []
 
-        return df
+        for i, image_path in enumerate(os.listdir(self.filename)):
+            label = int(image_path.split('_')[0])
+            label_one_hot = [0 if i != LabelsEnum(label).value else 1
+                             for i in range(len(LabelsEnum))]
+            label_y.append(label_one_hot)
 
-    def _load(self, plot_sensors=True, plot_raw=True,
-              plot_raw_psd=True) -> mne.io.RawArray:
-        """Load in recorder data files."""
+            # open image and convert to grayscale
+            image = Image.open(f"""{self.filename + image_path}""").convert('L')
+            image_numpy = np.array(image)
 
-        # explica isso depois
+            image_arr = 1 - np.reshape(image_numpy, 784) / 255.0
+            data_x.append(image_arr)
 
-        csv = self._read_files()
+        data_return = {}
+        data_return["x"] = data_x
+        data_return["y"] = label_y
 
-        ch_names = csv.columns.tolist()
-
-        # verificar o valor da frequencia
-        info = mne.create_info(ch_names=ch_names, sfreq=self.sfreq, ch_types="stim")
-
-        raw = mne.io.RawArray(csv.transpose(), info)
-
-        # load channel locations
-        print('Loading Channel Locations')
-        if plot_sensors:
-            raw.plot_sensors(show_names='True')
-
-        # Plot raw data
-        if plot_raw:
-            raw.plot(n_channels=len(ch_names), block=True)
-
-            # plot raw psd
-        if plot_raw_psd:
-            raw.plot_psd(fmin=.1, fmax=100)
-
-        return raw
+        return data_return

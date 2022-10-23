@@ -1,6 +1,6 @@
 class Feats:
-    def __init__(self, num_classes=2, class_weights: list = [1, 1], input_shape: list = [16, ],
-                 new_times=1, model_type='1', x_train: list = [], y_train: list = [], x_test: list = [],
+    def __init__(self, num_classes=2, class_weights: list = [1, 1], input_shape: tuple = (8, ),
+                 new_times=1, model_type='CNN', x_train: list = [], y_train: list = [], x_test: list = [],
                  y_test: list = [], x_val: list = [], y_val: list = [], test_split=0.2,
                  val_split=0.2, random_seed=1017):
 
