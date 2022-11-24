@@ -12,4 +12,3 @@ class Motor():
     def movimento(self, value: LabelsEnum):
         if value == LabelsEnum.LEFT:
             GPIO.output(self.pin, GPIO.HIGH)
-

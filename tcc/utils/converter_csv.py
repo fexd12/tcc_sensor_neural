@@ -15,6 +15,3 @@ def converter_csv_image(filename):
         # plt.show()
         plt.savefig("0_rasp_" + str(i) + ".jpg")
         # print(df.head())
-
-
-converter_csv_image("/Users/felipe/Desktop/projetos/tcc/tcc/rede_neural/testes/dataset/rasp_/")

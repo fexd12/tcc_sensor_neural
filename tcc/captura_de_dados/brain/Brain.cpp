@@ -221,36 +221,10 @@ uint32_t *Brain::readCSV()
     // find out how big this really needs to be
     // should be popped off the stack once it goes out of scope?
     // make the character array as small as possible
-    // char csvBuffer_temp[100] = {};
-
-    // char *tmp = csvBuffer_temp;
 
     if (hasPower)
     {
-        // int size;
-        
-        // size =  
-        //     sizeof(eegPower[0]) +
-        //     sizeof(eegPower[1]) +
-        //     sizeof(eegPower[2]) +
-        //     sizeof(eegPower[3]) +
-        //     sizeof(eegPower[4]) +
-        //     sizeof(eegPower[5]) +
-        //     sizeof(eegPower[6]) +
-        //     sizeof(eegPower[7]) + 
-        //     1;
         return eegPower;
-
-        // snprintf(csvBuffer_temp, sizeof(csvBuffer_temp),"%lu,%lu,%lu,%lu,%lu,%lu,%lu,%lu",
-        //         eegPower[0],
-        //         eegPower[1],
-        //         eegPower[2],
-        //         eegPower[3],
-        //         eegPower[4],
-        //         eegPower[5],
-        //         eegPower[6],
-        //         eegPower[7]);
-        // return tmp;
     }
     return 0;
 }

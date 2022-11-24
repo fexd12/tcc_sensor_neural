@@ -44,12 +44,3 @@ class PreProcessamento(DataLoader):
                                                                       classes=np.unique(y_ints),  # type: ignore
                                                                       y=y_ints
                                                                       )
-
-        # Print some outputs
-
-        # print('Input Shape: ' + str(self.feats.input_shape))
-        # print('x_train shape:', self.feats.x_train.shape)
-        # print(self.feats.x_train.shape[0], 'train samples')
-        # print(self.feats.x_test.shape[0], 'test samples')
-        # print(self.feats.x_val.shape[0], 'validation samples')
-        # print('Class Weights: ' + str(self.feats.class_weights))

@@ -29,9 +29,3 @@ class ImageRotate():
                 '.' +
                 image_file_split[1]
             )
-
-
-ImageRotate("/Users/felipe/Desktop/projetos/tcc/tcc/rede_neural/images/processar/", 90)
-ImageRotate("/Users/felipe/Desktop/projetos/tcc/tcc/rede_neural/images/processar/", 180)
-ImageRotate("/Users/felipe/Desktop/projetos/tcc/tcc/rede_neural/images/processar/", 270)
-ImageRotate("/Users/felipe/Desktop/projetos/tcc/tcc/rede_neural/images/processar/", 0)
