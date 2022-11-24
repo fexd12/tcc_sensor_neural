@@ -3,3 +3,4 @@ __pycache__
 Inner_Speech_Dataset/
 DeepEEG/
 *.egg-info/
+build/
