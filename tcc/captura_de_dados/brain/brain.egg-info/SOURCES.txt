@@ -1,0 +1,11 @@
+Brain.cpp
+Brain.i
+COPYING
+COPYING.LESSER
+README.md
+brain.py
+setup.py
+brain.egg-info/PKG-INFO
+brain.egg-info/SOURCES.txt
+brain.egg-info/dependency_links.txt
+brain.egg-info/top_level.txt
