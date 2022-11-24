@@ -11,3 +11,4 @@ Keras-Preprocessing
 # tensorflow-metal
 tensorflow
 mne==0.22.1
+RPi.GPIO
