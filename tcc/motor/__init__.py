@@ -1,5 +1,5 @@
 import RPi.GPIO as GPIO
-from utils.labels_enum import LabelsEnum
+from ..utils.labels_enum import LabelsEnum
 
 GPIO.setmode(GPIO.BOARD)
 
@@ -10,5 +10,5 @@ class Motor():
         GPIO.setup(self.pin, GPIO.OUT)
 
     def movimento(self, value: LabelsEnum):
-        if value == LabelsEnum.LEFT:
+        if value == LabelsEnum.UP:
             GPIO.output(self.pin, GPIO.HIGH)

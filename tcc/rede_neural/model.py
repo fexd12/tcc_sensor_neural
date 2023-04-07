@@ -2,8 +2,9 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 import numpy as np
 
-from ..utils.feats import Feats
-from .pre_processamento import PreProcessamento
+from tcc.rede_neural.layers import ExpandLayer
+from tcc.utils.feats import Feats
+from tcc.rede_neural.pre_processamento import PreProcessamento
 
 plt.rcParams["figure.figsize"] = (12, 12)
 plt.axis("off")
@@ -12,88 +13,130 @@ plt.axis("off")
 class ModelEEG(PreProcessamento):
     def __init__(self, feats: Feats, filename: str, sfreq: int) -> None:
         PreProcessamento.__init__(self, feats, filename, sfreq)
-        self.model = tf.keras.models.Sequential()
         self.__create_model()
 
-    def __create_model(self, units=[16, 8, 4, 8, 16],
-                       dropout=.25, batch_norm=True,
-                       pool_size=2, filt_size=3):
+    def __create_model(self, units=[200, 40],
+                       dropout=.25, pool_size=20, filt_size=3, steps=2, temp_layers=4):
 
+        self._feats.input_shape = self.train_data[0].shape[1:]
         print('Creating ' + self._feats.model_type + ' Model')
         print('Input shape: ' + str(self._feats.input_shape))
 
         nunits = len(units)
+        convs = [self._feats.input_shape[-1] // steps for _ in range(1, steps)]
+        convs += [self._feats.input_shape[-1] - sum(convs) + len(convs)]
 
         # ---DenseFeedforward Network
         # Makes a hidden layer for each item in units
-        if self._feats.model_type == 'NN':
-            self.model.add(tf.keras.layers.Flatten(input_shape=self._feats.input_shape))
+        # if self._feats.model_type == 'NN':
+        #     self.model.add(tf.keras.layers.Flatten(input_shape=self._feats.input_shape))
 
-            for unit in units:
-                self.model.add(tf.keras.layers.Dense(unit))
-                if batch_norm:
-                    self.model.add(tf.keras.layers.BatchNormalization())
-                self.model.add(tf.keras.layers.Activation('relu'))
-                if dropout:
-                    self.model.add(tf.keras.layers.Dropout(dropout))
+        #     for unit in units:
+        #         self.model.add(tf.keras.layers.Dense(unit))
+        #         if batch_norm:
+        #             self.model.add(tf.keras.layers.BatchNormalization())
+        #         self.model.add(tf.keras.layers.Activation('relu'))
+        #         if dropout:
+        #             self.model.add(tf.keras.layers.Dropout(dropout))
 
-            self.model.add(tf.keras.layers.Dense(self._feats.num_classes, activation='softmax'))
+        #     self.model.add(tf.keras.layers.Dense(self._feats.num_classes, activation='softmax'))
 
         if self._feats.model_type == 'CNN':
-            print(units)
             if nunits < 2:
                 print('Warning: Need at least two layers for CNN')
-            self.model.add(tf.keras.layers.Conv2D(units[0], filt_size,
-                           input_shape=self._feats.input_shape, padding='same'))
-            self.model.add(tf.keras.layers.Activation('relu'))
-            self.model.add(tf.keras.layers.MaxPooling2D(pool_size=pool_size, padding='same'))
 
-            if nunits > 2:
-                for unit in units[1:-1]:
-                    self.model.add(tf.keras.layers.Conv2D(unit, filt_size, padding='same'))
-                    self.model.add(tf.keras.layers.Activation('relu'))
-                    self.model.add(tf.keras.layers.MaxPooling2D(pool_size=pool_size, padding='same'))
+            ins = tf.keras.layers.Input(self._feats.input_shape)
 
-            self.model.add(tf.keras.layers.Flatten())
-            self.model.add(tf.keras.layers.Dense(units[-1]))
-            self.model.add(tf.keras.layers.Activation('relu'))
-            self.model.add(tf.keras.layers.Dense(self._feats.num_classes))
-            self.model.add(tf.keras.layers.Activation('softmax'))
+            conv = ExpandLayer()(ins)
+
+            for i, c in enumerate(convs):
+                tf.keras.layers.Conv2D(units[0] // len(convs), (1, c),
+                                       use_bias=False,
+                                       activation=tf.keras.activations.selu,
+                                       name='spatial_conv_{0}'.format(i),
+                                       kernel_regularizer=tf.keras.regularizers.l2(0.1),
+                                       data_format='channels_last'
+                                       )(conv)
+
+            tf.keras.layers.BatchNormalization()(conv)
+            # self.model.add(tf.keras.layers.AveragePooling2D((pool_size, 1)))
+            tf.keras.layers.SpatialDropout2D(dropout)(conv)
+
+            for i in range(temp_layers):
+                tf.keras.layers.Conv2D(units[1], (24, 1),
+                                       use_bias=False,
+                                       activation=tf.keras.activations.selu,
+                                       name='temporeal_conv_{0}'.format(i),
+                                       kernel_regularizer=tf.keras.regularizers.l2(0.1),
+                                       data_format='channels_last'
+                                       )(conv)
+
+            tf.keras.layers.BatchNormalization()(conv)
+            tf.keras.layers.AveragePooling2D((pool_size, 1))(conv)
+            tf.keras.layers.SpatialDropout2D(dropout)(conv)
+
+            outs = tf.keras.layers.Flatten()(conv)
+
+            for unit in units[2:]:
+                outs = tf.keras.layers.Dense(unit,
+                                             activation=tf.keras.activations.selu,
+                                             kernel_regularizer=tf.keras.regularizers.l2(0.1)
+                                             )(outs)
+                outs = tf.keras.layers.BatchNormalization()(outs)
+                outs = tf.keras.layers.Dropout(dropout)(outs)
+
+            outs = tf.keras.layers.Dense(self._feats.num_classes,
+                                         activation='softmax',
+                                         name='OUT',
+                                         kernel_regularizer=tf.keras.regularizers.l2(0.1)
+                                         )(outs)
+
+        self.model = tf.keras.models.Model(ins, outs)
 
         # initiate adam optimizer
-        opt = tf.keras.optimizers.Adam(learning_rate=0.01)
+        opt = tf.keras.optimizers.legacy.Adam(learning_rate=self._feats.learning_rate)
         # Let's train the model using RMSprop
-        self.model.compile(loss='categorical_crossentropy',
+        self.model.compile(loss=tf.keras.losses.categorical_crossentropy,
                            optimizer=opt,
-                           metrics=['accuracy'])
-        self.model.summary()
+                           metrics=[
+                               tf.keras.metrics.categorical_crossentropy,
+                               tf.keras.metrics.categorical_accuracy
+                           ])
+        self.model.summary(expand_nested=True)
 
-    def train_test_val(self, batch_size=2, train_epochs=50, show_plots=False):
+    def train_test_val(self, train_epochs=50, show_plots=False):
 
         print('Training Model:')
         # Train Model
 
-        check_path = './checkpoints/cp-{epoch:04d}.ckpt'
+        check_path = './models/model_train.h5'
 
         save_model_cb = tf.keras.callbacks.ModelCheckpoint(
-            check_path, save_weights_only=True, verbose=1, save_freq=5)
+            check_path,
+            save_best_only=True,
+            save_weights_only=False,
+            verbose=True,
+            monitor='val_categorical_accuracy'
+        )
+
+        plateu = tf.keras.callbacks.ReduceLROnPlateau(patience=50, factor=0.5),
+
 
         # print(self._feats.x_train)
-        x_train = np.array(self._feats.x_train)
-        y_train = np.array(self._feats.y_train)
+        # x_train = np.array(self._feats.x_train)
+        # y_train = np.array(self._feats.y_train)
 
-        x_test = np.array(self._feats.x_val)
-        y_test = np.array(self._feats.y_val)
+        # x_test = np.array(self._feats.x_val)
+        # y_test = np.array(self._feats.y_val)
 
         # print(x_train)
         # print(y_train)
 
-        history = self.model.fit(x_train, y_train,
-                                 batch_size=batch_size,
-                                 epochs=train_epochs,
-                                 validation_data=(x_test, y_test),
-                                 shuffle=True,
-                                 callbacks=[save_model_cb],
+        history = self.model.fit(*self.train_data,
+                                 batch_size=self._feats.batch_size,
+                                 epochs=self._feats.epochs,
+                                 validation_split=self._feats.test_split,
+                                 callbacks=[save_model_cb, plateu],
                                  #  class_weight=np.asarray(self._feats.class_weights)
                                  )
 
@@ -121,16 +164,25 @@ class ModelEEG(PreProcessamento):
         print("saving model...")
         self.model.save("./model/model_v1.h5")
         # Test on left out Test data
-        score, acc = self.model.evaluate(x_test, y_test,
-                                         batch_size=batch_size)
+        # del self.model
 
+        predictions = self.model.predict(x=self.test_data[0],
+                                         batch_size=self._feats.batch_size,
+                                         verbose=True)
+
+        print('\nPrediction Accuracy: {:.2f}'.format(100 * np.mean(
+            predictions.argmax(axis=-1) == self.test_data[1].argmax(axis=-1))))
         print(self.model.metrics_names)
-        print('Test loss:', score)
-        print('Test accuracy:', acc)
+        np.savez('./model/results.npz',
+                 predictions=predictions,
+                 truth=self.test_data[1])
 
-        # Build a dictionary of data to return
-        data = {}
-        data['score'] = score
-        data['acc'] = acc
+        # print('Test loss:', score)
+        # print('Test accuracy:', acc)
 
-        return data
+        # # Build a dictionary of data to return
+        # data = {}
+        # data['score'] = score
+        # data['acc'] = acc
+
+        # return data

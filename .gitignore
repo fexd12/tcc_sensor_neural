@@ -1,6 +1,13 @@
 venv/
+venv2/
 __pycache__
 Inner_Speech_Dataset/
 DeepEEG/
 *.egg-info/
 build/
+bkp/
+dist/
+target/
+mne_ready/
+dataset/
+checkpoints
