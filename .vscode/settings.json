@@ -2,5 +2,16 @@
     "C_Cpp.errorSquiggles": "Disabled",
     "python.linting.flake8Enabled": true,
     "python.linting.enabled": true,
-    "python.analysis.typeCheckingMode": "basic",
+    "python.analysis.typeCheckingMode": "off",
+    "files.associations": {
+        "*.js": "javascript",
+        "*.hdbfunction": "sql",
+        "*.html": "html",
+        "*.hdbprocedure": "sql",
+        "*.hdbsynonymconfig": "json",
+        "*.hdbsynonym": "json",
+        "*.hdbgrants": "json",
+        "bitset": "cpp",
+        "string": "cpp"
+    },
 }

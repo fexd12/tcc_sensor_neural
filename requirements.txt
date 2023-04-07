@@ -1,0 +1,16 @@
+numpy
+tensorboard
+pandas
+matplotlib
+scikit-learn
+h5py
+Keras
+Keras-Applications
+Keras-Preprocessing
+tensorflow-macos
+tensorflow-metal
+# tensorflow
+mne==0.22.1
+# RPi.GPIO
+wget
+tqdm
