@@ -11,3 +11,4 @@ target/
 mne_ready/
 dataset/
 checkpoints
+model/
