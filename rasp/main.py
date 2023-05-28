@@ -1,6 +1,4 @@
 import tensorflow as tf
-import numpy as np
-import matplotlib.pyplot as plt
 import time
 from tcc.utils.labels_enum import DataEnum
 from tcc.utils.feats import Feats
@@ -33,7 +31,6 @@ process_data = PreProcessamento(feats=_feats,
                                 filename="/Users/felipe/Desktop/projetos/tcc/mne_ready/",
                                 # cache_filename="/Users/felipe/Desktop/projetos/tcc/cache/",
                                 )
-# header = ["Delta", "theta", "low alpha", "high alpha", "low beta", "high beta", "low gamma", "mid gamma", "null"]
 
 while True:
     print('predicting results...')
