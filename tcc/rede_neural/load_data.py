@@ -57,8 +57,6 @@ class DataLoader():
         x = epochs.get_data()
         # epochs.plot_psd()
         return x.transpose((0, 2, 1)), tf.keras.utils.to_categorical(epochs.events[:, -1] - 1, num_classes=self._feats.num_classes)
-        # return self._exp_moving_whiten(x).transpose((0, 2, 1)), \
-        #     tf.keras.utils.to_categorical(epochs.events[:, -1] - 1, self._feats.num_classes)
 
     def _read_files(self):
         print('reading files...')
@@ -70,15 +68,9 @@ class DataLoader():
 
             train = list(map(self._arrays, [self.pathname + 'A0{}{}.raw.fif'.format(j, i)
                                             for j in range(1, 9, 1) for i in 'T']))
-            #    for j in range(1, 6, 1) for i in 'TE']))
-            # for j in range(1, 10, 1) for i in 'TE']))
 
             test = list(map(self._arrays, [self.pathname + 'A0{}{}.raw.fif'.format(j, i)
                                            for j in range(9, 10, 1) for i in 'E']))
-            #    for j in range(1, 6, 1) for i in 'TE']))
-            # for j in range(1, 10, 1) for i in 'TE']))
-            # x_data = np.array([])
-            # y_data = np.array([])
 
             return train, test
             # return x_data, y_data

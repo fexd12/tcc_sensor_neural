@@ -2,9 +2,7 @@ import matplotlib.pyplot as plt
 import tensorflow as tf
 import numpy as np
 import datetime
-import math
 from tcc.utils.feats import Feats
-from tcc.rede_neural.layers import ExpandLayer
 from tcc.rede_neural.pre_processamento import PreProcessamento
 
 plt.rcParams["figure.figsize"] = (12, 12)
@@ -40,35 +38,13 @@ class ModelEEG():
         convs = [self._feats.input_shape[-1] // steps for _ in range(1, steps)]
         convs += [self._feats.input_shape[-1] - sum(convs) + len(convs)]
 
-        # ---DenseFeedforward Network
-        # Makes a hidden layer for each item in units
-        # if self._feats.model_type == 'NN':
-        #     self.model.add(tf.keras.layers.Flatten(input_shape=self._feats.input_shape))
-
-        #     for unit in units:
-        #         self.model.add(tf.keras.layers.Dense(unit))
-        #         if batch_norm:
-        #             self.model.add(tf.keras.layers.BatchNormalization())
-        #         self.model.add(tf.keras.layers.Activation('relu'))
-        #         if dropout:
-        #             self.model.add(tf.keras.layers.Dropout(dropout))
-
-        #     self.model.add(tf.keras.layers.Dense(self._feats.num_classes, activation='softmax'))
-
         if self._feats.model_type == 'CNN':
             if nunits < 2:
                 print('Warning: Need at least two layers for CNN')
 
             model = tf.keras.models.Sequential()
-            # model = tf.keras.models.Sequential()
             model.add(tf.keras.layers.Input(self._feats.input_shape))
-            # model.add(ExpandLayer())
 
-            # model.add(tf.keras.layers.Conv2D(units[0], 3,
-            #                                  name='input_layer',
-            #                                  input_shape=self._feats.input_shape,
-            #                                  activation=tf.keras.activations.selu,
-            #                                  ))
             for i, c in enumerate(convs):
 
                 model.add(tf.keras.layers.Conv2D(units[0] // len(convs), (1, c),
@@ -83,20 +59,6 @@ class ModelEEG():
             model.add(tf.keras.layers.BatchNormalization())
             model.add(tf.keras.layers.AveragePooling2D((pool_size, 1)))
             model.add(tf.keras.layers.SpatialDropout2D(dropout))
-
-            # for i in range(temp_layers):
-            #     model.add(tf.keras.layers.Conv2D(units[1], (24, 1),
-            #                                      use_bias=False,
-            #                                      activation=tf.keras.activations.selu,
-            #                                      name='temporal_conv_{0}'.format(i),
-            #                                      kernel_regularizer=tf.keras.regularizers.l2(0.1),
-            #                                      data_format='channels_last',
-            #                                      padding='same'
-            #                                      ))
-
-            # model.add(tf.keras.layers.BatchNormalization())
-            # model.add(tf.keras.layers.AveragePooling2D((pool_size, 1)))
-            # model.add(tf.keras.layers.SpatialDropout2D(dropout))
 
             model.add(tf.keras.layers.Dense(self._feats.num_classes,
                                             activation=tf.keras.activations.relu,
@@ -165,36 +127,6 @@ class ModelEEG():
 
         self.model.summary()
 
-        # print(self._feats.x_train)
-        # print(self._feats.y_train)
-        # train_dataset_x = tf.constant(self._feats.x_train)
-
-        # train_dataset_y = tf.constant(self._feats.y_train)
-
-        # train_dataset = tf.data.Dataset.from_tensor_slices((*self._feats.x_train, *self._feats.y_train)) \
-        #     .batch(self._feats.batch_size)
-
-        class ProcessSequence(tf.keras.utils.Sequence):
-            def __init__(self, x_set, y_set, batch_size):
-                self.x, self.y = x_set, y_set
-                self.batch_size = batch_size
-
-            def __len__(self):
-                return math.ceil(len(self.x) / self.batch_size)
-
-            def __getitem__(self, idx):
-                low = idx * self.batch_size
-                # Cap upper bound at array length; the last batch may be smaller
-                # if the total number of items is not a multiple of batch size.
-                high = min(low + self.batch_size, len(self.x))
-                batch_x = self.x[low:high]
-                batch_y = self.y[low:high]
-
-                return np.array(batch_x), np.array(batch_y)
-
-        # seq = ProcessSequence(self._feats.x_train, self._feats.y_train,
-        #                       self._feats.batch_size)
-
         history = self.model.fit(
                                  self._feats.x_train,
                                  self._feats.y_train,
@@ -235,12 +167,6 @@ class ModelEEG():
         # del self.model
 
     def train_test_val(self, ):
-
-        # model = tf.saved_model.load('./model/model_v1.h5')
-
-        # test_dataset_x = tf.constant(*self._feats.x_test)
-
-        # test_dataset_y = tf.constant(*self._feats.y_test)
 
         print(self.model.summary())
 
