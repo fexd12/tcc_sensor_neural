@@ -10,7 +10,7 @@ from matplotlib.backends.backend_agg import FigureCanvas
 
 
 # leitura do model treinado
-model: tf.keras.Model = tf.keras.models.load_model('/Users/felipe/Desktop/projetos/tcc/tcc/model/model_v1.h5')
+model: tf.keras.Model = tf.keras.models.load_model('/Users/felipe/Desktop/projetos/tcc/model/model_v1.h5')
 
 # sensor_leitura = sensor_neural.SensorNeural()
 
