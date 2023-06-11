@@ -1,17 +1,13 @@
-import os
 import numpy as np
+import tensorflow as tf
 import mne
 from tcc.utils.feats import Feats
-import tensorflow as tf
 
 
 class DataLoader():
-    def __init__(self, pathname: str, sfreq: int, feats: Feats) -> None:
+    def __init__(self, pathname: str, feats: Feats) -> None:
         self.pathname = pathname
-        self.sfreq = sfreq
         self._feats = feats
-
-        self.train_data, self.test_data = self._read_files()
 
     def _emwa(self, data: np.ndarray, alpha=0.1):
         """
@@ -50,35 +46,35 @@ class DataLoader():
         return demeaned / np.maximum(1e-4, np.sqrt(sq_mean))
 
     def _arrays(self, path):
+        print("reading file: " + path)
         raw = mne.io.read_raw_fif(str(path), preload=True)
-
         # raw.plot_psd()
-        picks = mne.pick_types(raw.info, eog=True, stim=True, meg=False, eeg=True)
+        picks = mne.pick_types(raw.info, eog=False, stim=False, meg=False, eeg=True)
         events = mne.find_events(raw)
         epochs = mne.Epochs(raw, events, tmin=self._feats.t_min,
                             tmax=self._feats.t_min + self._feats.t_len - 1 / raw.info['sfreq'],
                             preload=True, picks=picks, baseline=None)
         x = epochs.get_data()
-
-        return self._exp_moving_whiten(x).transpose((0, 2, 1)), \
-            tf.keras.utils.to_categorical(epochs.events[:, -1] - 1, self._feats.num_classes)
+        # epochs.plot_psd()
+        return x.transpose((0, 2, 1)), tf.keras.utils.to_categorical(epochs.events[:, -1] - 1, num_classes=self._feats.num_classes)
 
     def _read_files(self):
         print('reading files...')
 
-        files = os.scandir(self.pathname)
-
         try:
-            return [self._arrays(self.pathname + 'A0{}{}.raw.fif'.format(1, i)) for i in 'TE']
-        except Exception:
+            # data = np.array(*tuple(map(self._arrays,
+            #                            [self.pathname + 'A0{}{}.raw.fif'.format(j, i)
+            #                             for j in range(1, 10, 1) for i in 'TE']))
+
+            train = list(map(self._arrays, [self.pathname + 'A0{}{}.raw.fif'.format(j, i)
+                                            for j in range(1, 9, 1) for i in 'T']))
+
+            test = list(map(self._arrays, [self.pathname + 'A0{}{}.raw.fif'.format(j, i)
+                                           for j in range(9, 10, 1) for i in 'E']))
+
+            return train, test
+            # return x_data, y_data
+            # return [self._arrays(self.pathname + 'A0{}{}.raw.fif'.format(j, i)) for j in range(9) for i in 'TE']
+        except Exception as e:
+            print('Error processing :', e)
             pass
-        finally:
-            files.close()
-
-        # data_return = {}
-        # # print(data_x)
-        # data_return["x"] = data_x
-        # data_return["y"] = label_y
-
-        # print(data_return)
-        # return data_return

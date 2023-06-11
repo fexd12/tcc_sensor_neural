@@ -1,40 +1,33 @@
-from sklearn.model_selection import train_test_split
-
-from tcc.rede_neural.load_data import DataLoader
+# import os
+import numpy as np
 from tcc.utils.feats import Feats
+from tcc.rede_neural.load_data import DataLoader
 
 
 class PreProcessamento(DataLoader):
-    def __init__(self, feats: Feats, filename: str, sfreq: int) -> None:
-        DataLoader.__init__(self, filename, sfreq, feats)
-        self._feats = feats
+    def __init__(self, feats: Feats, filename: str, cache_filename=None) -> None:
+        DataLoader.__init__(self, filename, feats)
+
+        self.cache_filename = cache_filename
+        # self.train_data = []
+        # self.test_data = []
 
         self.feature_engineer()
 
     def feature_engineer(self):
-        print('skip spliting features...')
-        # val_prop = self._feats.val_split / (1 - self._feats.test_split)
+        print('spliting features...')
 
-        # self._feats.x_train, \
-        #     self._feats.x_test, \
-        #     self._feats.y_train, \
-        #     self._feats.y_test = train_test_split(self.raw,
-        #                                           test_size=self._feats.test_split,
-        #                                           random_state=self._feats.random_seed,
-        #                                           )
+        train, test = self._read_files()
 
-        # self._feats.x_train, \
-        #     self._feats.x_val, \
-        #     self._feats.y_train, \
-        #     self._feats.y_val = train_test_split(self._feats.x_train, self._feats.y_train,
-        #                                          test_size=val_prop,
-        #                                          random_state=self._feats.random_seed
-        #                                          )
+        x_train, y_train = map(list, zip(*train))
+        x_test, y_test = map(list, zip(*test))
 
-        # # compute class weights for uneven classes
-        # y_ints = [y.argmax() for y in np.asarray(self._feats.y_train)]
+        print(len(x_train), len(y_train))
+        print(type(x_train), type(y_train))
+        print(x_train[0].shape, y_train[0].shape)
+        print(y_train[0])
 
-        # self._feats.class_weights = class_weight.compute_class_weight(class_weight='balanced',
-        #                                                               classes=np.unique(y_ints),  # type: ignore
-        #                                                               y=y_ints
-        #                                                               )
+        self._feats.x_train = np.array(x_train)
+        self._feats.x_test = np.array(x_test)
+        self._feats.y_train = y_train
+        self._feats.y_test = y_test
